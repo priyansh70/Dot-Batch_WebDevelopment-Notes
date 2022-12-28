@@ -1,0 +1,10 @@
+Use MDN or Any Documentation 
+
+Question1 - Explore Description List!
+Answer : https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl
+
+Question2 - What happens when we close an Empty Tag?
+Answer : Nothing - Adding the closing tags to the empty elements will be invalid syntax
+
+Question3 - Can we use attribute with html tag? 
+Answer : Yes, Example - <html lang="en">
