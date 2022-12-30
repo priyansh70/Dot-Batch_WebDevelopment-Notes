@@ -1,7 +1,26 @@
 Question1 - Why there is only h1 to h6 not h7,h8......?
+Answer : The HTML specification defines six headings. Browsers recognize six headings. 
+If you start using <h7> and so on, then you'll be using an invalid element.
+If you find yourself needing an <h7> then you should probably take a look at how 
+you're structuring your site. Not every single title deserves a heading elemen
+
+----------------------xxx--------------------
+
 Question2 - How change Color of Hr line?
+Answer : Using CSS
+
+----------------------xxx--------------------
+
 Question3 - Give Bg color as line have width not full line 
+Answer : Change display as Inline
+
+----------------------xxx--------------------
+
 Question4 - Quatation and Citation Tags [blockquate,q,cite,address,abbr] using MDN 
+Answer : 22-hw4 File
+
+----------------------xxx--------------------
+
 Question5 - How to add Favicon Icon
 Question6 - Make - https://codehelp-linus-torvalds-tribute.netlify.app/
 Quetion7 - Make - https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.programmingwithbasics.com%2F2016%2F04%2Fcreate-given-table-using-table-in-html.html&psig=AOvVaw201UyX4ge1eM9XJl9NpXdS&ust=1672420748962000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCLD7vPeqn_wCFQAAAAAdAAAAABAE
