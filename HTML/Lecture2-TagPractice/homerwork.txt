@@ -22,7 +22,19 @@ Answer : 22-hw4 File
 ----------------------xxx--------------------
 
 Question5 - How to add Favicon Icon
+Answer : 23-hw5-favicon File
+
+----------------------xxx--------------------
+
 Question6 - Make - https://codehelp-linus-torvalds-tribute.netlify.app/
-Quetion7 - Make - https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.programmingwithbasics.com%2F2016%2F04%2Fcreate-given-table-using-table-in-html.html&psig=AOvVaw201UyX4ge1eM9XJl9NpXdS&ust=1672420748962000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCLD7vPeqn_wCFQAAAAAdAAAAABAE
+Answer : 24-hw6-project1 File 
+
+----------------------xxx--------------------
+
+Question7 - Make - https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.programmingwithbasics.com%2F2016%2F04%2Fcreate-given-table-using-table-in-html.html&psig=AOvVaw201UyX4ge1eM9XJl9NpXdS&ust=1672420748962000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCLD7vPeqn_wCFQAAAAAdAAAAABAE
+Answer : 25-hw7-project2 File
+
+----------------------xxx--------------------
 
 Question8 - Make - codehelp-html-contact-form.netlify.app
+Answer : 26-hw8-project3 File
