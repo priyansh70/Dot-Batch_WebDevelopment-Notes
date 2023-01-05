@@ -1,0 +1,7 @@
+Q1 - Difference between Header vs H1 
+Q2 - Can we use Header tag inside Footer
+Q3 - Can we use Multiple Header tag
+Q4 - can we Make Aside content in Center 
+Q5 - Difference between Body and Main
+Q6 - For Difference - Difference device we use same favicon?
+Q7 - Create DOM of Tribute Page
