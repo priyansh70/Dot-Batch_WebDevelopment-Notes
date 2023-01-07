@@ -1,0 +1,18 @@
+Question1 - Explore - 
+👉 Universal Selector
+👉 Nested Selector
+👉 Attribute Selector
+
+Question2 - Font
+👉 Font Family
+👉 Font Weight
+👉 Font Style
+👉 Emphasis & Important
+👉 How to add External Font
+
+Question3 - Box have 100*100 resolution and words have more than 1000 what will happen?
+
+Question4 - Style Tribute page using External CSS
+Question5 - Can you create a card like this ? [Web Bootcamp Card]
+
+Question6 - Difference between 1% and 1vw
