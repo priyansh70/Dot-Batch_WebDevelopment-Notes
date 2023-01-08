@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colors</title>
+
+    <style>
+      /* Select By Tag Name */
+      div {
+        width: 300px;
+        height: 700px;
+        border: 2px solid black;
+        padding: 40px;
+        background-color: aliceblue;
+      }
+
+      h1 {
+        background-color: yellow;
+      }
+
+      p {
+        color: red;
+        font-weight: 600;
+        font-style: italic;
+      }
+
+      li {
+        font-size: 17px;
+        font-weight: 700;
+      }
+      .code {
+        background-color: black;
+        color: white;
+        border-radius: 8px;
+        padding: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Colors</h1>
+      <p>
+        We've already seen some properties in CSS that take color values. Here's
+        an example:
+      </p>
+      <pre class="code">
+        p{
+            color: blue;
+        }
+      </pre>
+      <ul>
+        There are several different ways to specify colors in CSS. <hr>
+        <li>Color Keyword</li>
+        <li>RGB</li>
+        <li>RGBA</li>
+        <li>HSL</li>
+        <li>HSLA</li>
+        <li>Hexadecimal</li>
+      </ul>
+
+      <h2>Example Below:</h2>
+
+      <p style="color: red">It is Colored by Keyword</p>
+      <p style="color: rgb(15, 45, 54)">It is Colored by RGB</p>
+      <p style="color: rgba(45, 206, 46, 0.7)">It is Colored by RGBA</p>
+      <p style="color: hsl(254, 100%, 50%)">It is Colored by HSL</p>
+      <p style="color: hsla(168, 100%, 50%, 0.801)">It is Colored by HSLA</p>
+      <p style="color: #1ed416">It is Colored by Hexadecimal</p>
+    </div>
+  </body>
+</html>

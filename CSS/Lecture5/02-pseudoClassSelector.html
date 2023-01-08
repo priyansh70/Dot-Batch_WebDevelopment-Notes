@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Element Selector</title>
+
+    <style>
+      /* Select By Tag Name */
+      div {
+        width: 400px;
+        height: 300px;
+        border: 2px solid black;
+        padding: 40px;
+        background-color: aliceblue;
+      }
+
+      h1 {
+        background-color: yellow;
+      }
+
+      p {
+        background-color: beige;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 15px;
+        font-weight: 700;
+      }
+
+      ul li {
+        font-weight: 500;
+      }
+
+      .test
+      {
+        text-align: center;
+        padding: 5px;
+        margin: 7px;
+        background-color: aquamarine;
+        font-size: 16px;
+        border: 2px solid red;
+        border-radius: 4px;
+        transition: 0.5s;
+      }
+
+      #over:hover{
+        background-color: red;
+        color: yellow;
+      }
+
+      #focus:focus{
+        background-color: yellow;
+        color: red;
+
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Pseudo Class Selector</h1>
+      <p>A pseudo-class is used to define a special state of an element.</p>
+      <p>For example, it can be used to:</p>
+      <ul>
+        <li>Style an element when a user mouses over it</li>
+        <li>Style visited and unvisited links differently</li>
+        <li>Style an element when it gets focus</li>
+      </ul>
+
+      <button class="test" id="over">Mouse Over Me</button>
+     <input type="text" class="test" placeholder="Click Me To Get Focus" id="focus">
+    </div>
+  </body>
+</html>

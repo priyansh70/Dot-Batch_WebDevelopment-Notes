@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Specificity</title>
+
+    <style>
+      /* Select By Tag Name */
+      div {
+        width: 300px;
+        height: 600px;
+        border: 2px solid black;
+        padding: 40px;
+        background-color: aliceblue;
+      }
+
+      h1 {
+        background-color: yellow;
+      }
+
+      p {
+        color: red;
+        font-weight: 600;
+        font-style: italic;
+      }
+
+      li {
+        font-size: 17px;
+        font-weight: 700;
+      }
+
+      span{
+        background-color: tomato;
+        height: 100px;
+        width: 100px;
+        display: block;
+        padding: 25px;
+      }
+
+      .container
+      {
+        background-color: blanchedalmond;
+        border: 2px solid red;
+      }
+
+      #spanContainer
+      {
+        border: 2px solid black;
+        font-size: 18px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>CSS Specificity</h1>
+      <p>
+        If there are two or more CSS rules that point to the same element, the
+        selector with the highest specificity value will "win", and its style
+        declaration will be applied to that HTML element.
+      </p>
+      <p>Rank Below High to Low</p>
+      <ul>
+        <li>Inline CSS</li>
+        <li>ID Selector</li>
+        <li>Class Selector</li>
+        <li>Tag Name Selector</li>
+      </ul>
+
+      <h2>Example Below:</h2>
+      <span class="container" id="spanContainer" style="color: blue">
+        This is used for Check Specificity of CSS Selector
+      </span>
+    </div>
+  </body>
+</html>
