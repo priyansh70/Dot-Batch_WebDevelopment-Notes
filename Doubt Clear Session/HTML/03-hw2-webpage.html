@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webpage</title>
+
+    <style>
+      body {
+        margin: 0;
+        text-align: center;
+        padding: 0;
+        background-color: aliceblue;
+      }
+
+      main {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      main header h1 {
+        background-color: yellow;
+        font-size: 24px;
+        line-height: 18px;
+        padding: 14px;
+        margin: 10px;
+        display: inline-block;
+      }
+
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 90px;
+      }
+
+      .section {
+        width: 400px;
+        height: 300px;
+        border: 2px solid #45de56;
+        margin: 10px;
+        padding: 15px;
+      }
+
+      .section h3 {
+        margin: 10px auto 15px;
+        background-color: #00ffdd;
+        display: inline-block;
+        padding: 10px;
+        border-radius: 5px;
+      }
+      audio {
+        display: block;
+        width: 380px;
+        /* height: 130px; */
+        margin-top: 50px;
+        border: 2px solid #45de56;
+        border-radius: 50px;
+        text-emphasis: filled red;
+        box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Webpage - Embedded Youtube Video, Audio , Video</h1>
+      </header>
+
+      <div class="container">
+        <section class="section">
+          <h3>Youtube Video</h3>
+          <iframe
+            width="380"
+            height="230"
+            src="https://www.youtube.com/embed/QG0hE0R_ng4"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </section>
+
+        <section class="section">
+          <h3>Normal Video</h3>
+          <video
+            width="380"
+            height="230"
+            src="./My Wallpaper.mp4"
+            controls
+          ></video>
+        </section>
+
+        <section class="section">
+          <h3>Audio</h3>
+          <audio src="./Kesariya.mp3" controls>Listen</audio>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
