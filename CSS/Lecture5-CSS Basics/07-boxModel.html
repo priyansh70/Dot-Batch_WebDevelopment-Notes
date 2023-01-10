@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model</title>
+
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+      }
+
+      #margin {
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        width: 500px;
+        height: 300px;
+        border: 1px dotted black;
+        background-color: #f7cca1;
+      }
+
+      #border {
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        height: 200px;
+        width: 450px;
+        background-color: #fbdc9e;
+      }
+
+      #padding {
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        background: #c2cf8d;
+        height: 150px;
+        width: 300px;
+      }
+
+      #content {
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        background: #8db6c1;
+        height: 100px;
+        width: 200px;
+      }
+
+      .test
+      {
+        background-color: #8db6c1;
+        width: 400px;
+        height: 200px;
+        margin: 20px;
+        padding: 40px;
+        border: 8px solid rosybrown;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="margin">
+        Margin
+        <div id="border">
+          Border
+          <div id="padding">
+            Padding
+            <div id="content">Content</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="test">Content</div>
+  </body>
+</html>

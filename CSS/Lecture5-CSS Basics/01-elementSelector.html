@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Element Selector</title>
+
+    <style>
+        /* Select By Tag Name */
+        div{
+            width: 300px;
+            height: 600px;
+            border: 2px solid black;
+            padding: 40px;
+            background-color: aliceblue;
+        }
+
+        h1
+        {
+            background-color: yellow;
+        }
+
+        /* Select by Id */
+        #para
+        {
+            color: red;
+            font-weight: 600;
+            font-style: italic;
+        }
+
+        .code
+        {
+            background-color: black;
+            color: white;;
+            border-radius: 8px;
+            padding: 15px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+    </style>
+
+  </head>
+  <body>
+    <div>
+      <h1>Element Selector</h1>
+      <p id="para">
+        Element selector basically select element/tag directly,select elements
+        based on name, id, class
+        <br />
+        <b>example - Select By Name: </b>
+        <pre class="code">p {
+            text-align: center;
+            color: red;
+          }</pre> <br>
+        <b>Example : ID Selecotor</b>
+        <pre class="code">#para1 {
+            text-align: center;
+            color: red;
+          }</pre>
+        <b>Example : class Selecotor</b>
+        <pre class="code">.para1 {
+            text-align: center;
+            color: red;
+          }</pre>
+      </p>
+    </div>
+  </body>
+</html>

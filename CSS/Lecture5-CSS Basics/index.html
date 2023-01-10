@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+
+    <!-- Link CSS External  -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- CSS  -->
+    <style>
+      /* Element Selector  */
+      p {
+        color: red;
+        font-size: larger;
+      }
+
+      h1 {
+        background-color: aqua;
+      }
+
+      table {
+        border-collapse: collapse;
+        border: 10px solid black;
+      }
+
+      /* Class Selector  */
+      .green {
+        color: rgb(0, 255, 0);
+        background-color: rgb(28, 46, 0);
+      }
+
+      .blue {
+        color: rgb(199, 199, 255);
+        background-color: rgb(0, 0, 255);
+      }
+
+      .small {
+        font-size: small;
+      }
+
+      .big {
+        font-size: large;
+      }
+
+      /* ID Element  */
+      #firstButton {
+        color: red;
+      }
+
+      #introPara{
+        background-color: bisque;
+        color: red;
+      }
+      
+      /* Pseudo Element */
+      #btn
+      {
+        background-color: blue;
+        color: red;
+      }
+
+      #btn:hover{
+        color: blue;
+        background-color: red;
+      }
+
+      #h4{
+        text-shadow: 2px 2px red;
+      }
+
+      /* Specify  */
+      #para{
+        color: green;
+      }
+
+      .para{
+        color: beige;
+      }
+
+    /* Box Model */
+    .box
+    {
+        height: 200px;
+        width: 200px;
+        border: 2px solid #000;
+        text-align: center;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    #box1{
+        background-color: salmon;
+    }
+
+    #box2{
+        background-color: tomato;
+    }
+
+    #box3{
+        background-color: tan;
+    }
+
+    /* Unit */
+    #container
+    {
+        height: 500px;
+        width: 500px;
+        background-color: red;
+    }
+
+    #container div{
+        width: 30%;
+        height: 30%;
+        background-color: plum;
+    }
+
+
+    </style>
+  </head>
+  <body>
+    <!-- Use for Element Selector  -->
+    <p>This is 1st paragraph</p>
+    <p>This is second Paragraph</p>
+
+    <h1>This is first heading</h1>
+    <h1>This is second heading</h1>
+
+    <table>
+      <tr>
+        <td>Cell1</td>
+        <td>Cell2</td>
+      </tr>
+    </table>
+
+    <!-- Use for Class Selector  -->
+    <p class="green">Paragraph1</p>
+    <p class="green">Paragraph2</p>
+    <p class="blue">Paragraph3</p>
+
+    <h1 class="small">Heading1</h1>
+    <h2 class="small">Heading2</h2>
+    <h3 class="small">Heading3</h3>
+
+    <h4 class="big">Heading4</h4>
+    <h5 class="big">Heading5</h5>
+    <h6 class="big">Headin6</h6>
+
+    <!-- ID  -->
+    <button id="firstButton">Submit</button>
+
+    <p id="introPara">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium,
+      esse. Cupiditate excepturi suscipit beatae aspernatur eos molestiae
+      ducimus quisquam! Deserunt?\
+    </p>
+
+    <!-- Pseudo Class  -->
+    <button id="btn">Submit</button>
+
+
+    <!-- Inline CSS  -->
+    <h3 style="background-color: aqua; font-style: italic;">I am Heading3 and use for Inline CSS</h3>
+
+    <!-- Internal CSS  -->
+    <h4 id="h4">This is use for Internal CSS , Internal CSS uses in Head tag in style tag</h4>
+
+    <!-- External CSS  -->
+    <div>
+        <h1 class="divMember">Heading of Div</h1>
+        <p class="divMember">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, non? Laudantium maxime incidunt, similique tempora in perferendis quia unde vero eius quo magnam veritatis ullam quas consequatur. Quidem nihil totam aliquam quos, delectus, dolore nobis culpa, excepturi illum qui quibusdam.</p>
+    </div>
+
+
+    <!-- Specify  -->
+    <p id="para" class="para">I'm used for Specify CSS</p>
+
+    <!-- Box Model  -->
+    <div class="box" id="box1">Box1</div>
+    <div class="box" id="box2">Box2</div>
+    <div class="box" id="box3">Box3</div>
+
+    <!-- Colors  -->
+
+    <!-- Unit -->
+    <div id="container">
+        500*500
+        <div>Inner Div <br> 50*50 </div>
+    </div>
+  </body>
+</html>
