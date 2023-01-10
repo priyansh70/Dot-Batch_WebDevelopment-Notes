@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture 6</title>
+
+    <style>
+      .linear {
+        border: 1px solid black;
+        height: 200px;
+        width: 150px;
+        background-image: linear-gradient(red, yellow);
+
+        background-image: linear-gradient(to right, red, yellow);
+
+        background-image: linear-gradient(to top, red, yellow);
+
+        background-image: linear-gradient(to top right, red, yellow);
+
+        background-image: linear-gradient(150deg, red, yellow);
+      }
+
+      .radial {
+        border: 1px solid black;
+        height: 200px;
+        width: 150px;
+        background-image: radial-gradient(red, yellow, orange);
+
+        background-image: radial-gradient(circle, red, yellow);
+      }
+
+      #text-shadow {
+        text-shadow: 3px 3px;
+        text-shadow: 3px 3px red;
+        text-shadow: 3px 3px 4px red;
+        text-shadow: 3px 3px 4px red, 4px 5px 5px yellow;
+        text-shadow: 0px 0px 5px yellow;
+      }
+
+      /* Box Shadow  */
+      .boxShadow {
+        height: 200px;
+        width: 200px;
+        background-color: #415dd5;
+        box-shadow: 10px 10px red;
+        box-shadow: 10px 10px 12px red;
+        box-shadow: 0px 0px 5px red;
+        box-shadow: -10px -10px 5px red, 10px 2px 5px yellow;
+      }
+
+      .boxShadow p {
+        color: red;
+      }
+
+      .boxShadow span {
+        color: yellow;
+      }
+
+      /* Max Height  */
+      .maxHeight {
+        max-height: 200px;
+        background-color: red;
+        overflow: scroll;
+        color: aliceblue;
+      }
+
+      /* Min Height  */
+      .minHeight {
+        margin: 10px;
+        min-height: 100px;
+        border: 2px solid red;
+      }
+
+      .overflow {
+        height: 150px;
+        width: 150px;
+        background-color: #415dd5;
+        overflow: visible;
+        overflow: scroll;
+        overflow: hidden;
+        overflow: auto;
+        color: white;
+      }
+
+      .position {
+        border: 2px solid red;
+        padding: 15px;
+        margin: 15px;
+        position: relative;
+        left: 40px;
+        top: 15px;
+        height: 100px;
+      }
+
+      .absolute {
+        border: 2px solid black;
+        position: absolute;
+        top: 40px;
+        left: 40px;
+      }
+
+      .fixed {
+        position: fixed;
+        background-color: rgb(255, 198, 198);
+        top: 40px;
+        left: 40px;
+      }
+
+      .sticky {
+        background-color: rebeccapurple;
+        position: sticky;
+        top: 0px;
+      }
+
+      .transform {
+        background-color: blanchedalmond;
+        border: 2px solid red;
+        height: 250px;
+        width: 350px;
+      }
+
+      .translate {
+        background-color: aliceblue;
+        transform: translateX(10px);
+        transform: translateY(20px);
+        transform: translate(10px, 20px);
+      }
+
+      .rotate {
+        background-color: #415dd5;
+        transform: rotate(40deg);
+      }
+
+      .scale {
+        background-color: red;
+        transform: scale(1, 2);
+      }
+
+      .skew {
+        background-color: pink;
+        transform: skew(27deg);
+      }
+
+      .ThreeD {
+        background-color: antiquewhite;
+        height: 400px;
+        width: 500px;
+        border: 2px solid pink;
+      }
+
+      .translate3d{
+        transform: translate3d(42px, 62px, -135px);
+        padding: 10px;
+        background-color: aliceblue;
+      }
+
+    </style>
+  </head>
+  <body>
+    <!-- Gradients -->
+    <div class="linear">Linear Gradient</div>
+    <div class="radial">Radial Gradient</div>
+
+    <p class="sticky">I am Sticky</p>
+    <!-- Shadows -->
+    <h1 id="text-shadow">Text Shadow</h1>
+    <div class="boxShadow">
+      <p>Box</p>
+      <span>Shadow</span>
+    </div>
+
+    <br /><br /><br /><br /><br />
+    <div class="maxHeight">
+      This is Max Height Lorem ipsum dolor sit, amet consectetur adipisicing
+      elit. Natus, esse eum. Minima veniam provident consequuntur unde eligendi
+      illo quibusdam odit ipsa rem nam et at voluptatem, dolor nulla nisi
+      perspiciatis ullam fugit tempora, soluta maxime, eos quam doloremque!
+      Quod, quibusdam tenetur! Aut porro fugiat maiores error id expedita
+      placeat suscipit?
+    </div>
+
+    <div class="minHeight">
+      This is Min Height Lorem ipsum, dolor sit amet consectetur adipisicing
+      elit. Unde, nihil laboriosam commodi eveniet laborum molestiae rem maxime
+      neque quidem aliquid atque, quisquam dignissimos sit, consequatur culpa
+      impedit sequi eos quam debitis illo. Commodi, incidunt facere? Expedita
+      consectetur labore nobis inventore. Lorem ipsum dolor, sit amet
+      consectetur adipisicing elit. Consectetur minus officiis atque blanditiis
+      voluptates, molestias numquam perferendis exercitationem modi similique,
+      debitis eos nisi architecto iste repudiandae nobis impedit, delectus fugit
+      neque adipisci itaque cupiditate ipsam ex? Quam ipsam, nostrum suscipit
+      rem ea molestias omnis inventore id, qui necessitatibus laborum dolorum.
+    </div>
+
+    <!-- Overflow  -->
+    <div class="overflow">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+      reiciendis dignissimos amet voluptatem repellat atque molestias tempore
+      consequuntur nesciunt adipisci voluptate ex saepe corrupti, dolore
+      dolores. Sapiente, error molestiae maiores eos magnam odio, ipsa
+      voluptatem ea accusamus labore perspiciatis! Nesciunt aspernatur tenetur
+      itaque soluta maxime ut iusto temporibus, explicabo eos.
+    </div>
+
+    <!-- Position  -->
+    <div class="position">
+      Positions
+      <div class="absolute">I am absolute</div>
+    </div>
+
+    <p class="fixed">I am Fixed</p>
+
+    <!-- Transform  -->
+    <div class="transform">
+      <div class="translate">Translate</div>
+      <div class="rotate">Rotate</div>
+      <br /><br /><br /><br />
+      <div class="scale">Scale</div>
+      <br /><br />
+      <div class="skew">Skew</div>
+    </div>
+
+    <div class="ThreeD">
+      <div class="translate3d">Translate 3d</div>
+    </div>
+  </body>
+</html>
