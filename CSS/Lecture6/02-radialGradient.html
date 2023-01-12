@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radial Gradient</title>
+    <style>
+      .box {
+        height: 200px;
+        width: 200px;
+        border: 2px solid red;
+        display: inline-block;
+        font-weight: 900;
+        box-sizing: border-box;
+        margin: 5px;
+      }
+
+      #box1 {
+        background-image: radial-gradient(yellow, #126404);
+      }
+
+      #box2 {
+        background-image: radial-gradient(circle, pink, blue);
+      }
+      #box3 {
+        background: radial-gradient(
+          circle at 100%,
+          #333,
+          #333 50%,
+          #eee 75%,
+          #333 75%
+        );
+      }
+
+      #box4 {
+        background-image: radial-gradient(ellipse, #30abc2, #0fd31f);
+      }
+
+      #box5 {
+        background-image: radial-gradient(ellipse,yellow 10%,red 20%,blue 40%,pink 50%);
+      }
+    
+    </style>
+  </head>
+  <body>
+    <h1>Radial Gradient</h1>
+
+    <div class="box" id="box1">Normal 2 Color Radial Gradient</div>
+    <div class="box" id="box2">Circle Two Color Radial Gradient</div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+    <div class="box" id="box5"></div>
+
+  </body>
+</html>

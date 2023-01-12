@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Gradient</title>
+    <style>
+        .box
+        {
+            height: 200px;
+            width: 200px;
+            border: 2px solid red;
+            display: inline-block;
+            font-weight: 900;
+            box-sizing: border-box;
+            margin: 5px;
+        }
+
+        #box1{
+            background-image: linear-gradient(yellow,green);
+        }
+
+        #box2{
+            background-image: linear-gradient(orange,green,red);
+        }
+        #box3{
+            background-image: linear-gradient( to top,orange,white);
+        }
+
+        #box4{
+            background-image: linear-gradient(to right,tomato,pink);
+        }
+
+        #box5{
+            background-image: linear-gradient(to left,salmon,orange);
+        }
+        #box6{
+            background-image: linear-gradient(to top left,purple,blue);
+        }
+        #box7{
+            background-image: linear-gradient(to bottom left,purple,blue);
+        }
+        #box8{
+            background-image: linear-gradient(to  left top,rgb(255, 0, 255),rgb(161, 161, 255));
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Linear Gradient
+    </h1>
+
+    <div class="box" id="box1">Two Color Gradient [Top to Down]</div>
+    <div class="box" id="box2">Three Color Gradient [Top to Down]</div>
+    <div class="box" id="box3">Bottom to Top</div>
+    <div class="box" id="box4">Left to Right</div>
+    <div class="box" id="box5">Right to Left</div>
+    <div class="box" id="box6">to Top Left</div>
+    <div class="box" id="box7">to bottom left</div>
+    <div class="box" id="box8">Left Top</div>
+
+</body>
+</html>
