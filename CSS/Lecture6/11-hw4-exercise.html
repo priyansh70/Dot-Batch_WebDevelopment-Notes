@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise</title>
+    <style>
+      .box {
+        width: 300px;
+        height: 300px;
+        background-image: linear-gradient(#02314d, #00ffff, rgb(255, 0, 212), red);
+        color: aliceblue;
+        font-weight: 900;
+        font-size: 18px;
+        position: relative;
+      }
+
+      #span1{
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      #span2{
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+
+      #span3{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      #span4{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+
+      #span5{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Exercise 1</h1>
+    <div class="box">
+      <span id="span1">span1</span>
+      <span id="span2">span2</span>
+      <span id="span3">span3</span>
+      <span id="span4">span4</span>
+      <span id="span5">span5</span>
+    </div>
+  </body>
+</html>
