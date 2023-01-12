@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture 7</title>
+
+    <style>
+      .container {
+        border: 2px solid black;
+        height: 400px;
+        display: flex;
+        box-sizing: border-box;
+        /* flex-direction: column; */
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column-reverse; */
+        /* flex-direction: row; */
+
+        /* flex-wrap: wrap; */
+        /* flex-wrap: nowrap; */
+        /* flex-wrap: wrap-reverse; */
+
+        /* flex-flow: row wrap; direction wrap */
+
+        /* justify-content: flex-end;
+            justify-content: center;
+            justify-content: space-around;
+            justify-content: space-evenly;
+            justify-content: space-between; */
+        /* justify-content: flex-start; */
+
+        /* align-items: baseline; */
+        /* align-items: flex-start; */
+        /* align-items: flex-end; */
+        /* align-items: stretch; */
+        align-items: center;
+
+        gap: 3%;
+
+        /* align-content: flex-end; */
+        /* align-content: space-around; */
+        /* align-content: space-between; */
+        /* align-content: stretch; */
+        /* align-content: flex-start; */
+        align-content: center;
+      }
+
+      .box {
+        border: 2px solid red;
+        background-color: aliceblue;
+        width: 50px;
+      }
+
+      /* Flex Item Property  */
+      #box1 {
+        order: 1;
+        flex-grow: 2;
+      }
+
+      #box2 {
+        order: 1;
+        /* flex-shrink: 2; */
+      }
+
+      #box3 {
+        /* align-self: baseline; */
+        /* align-self: flex-end; */
+        /* align-self: flex-start; */
+        /* align-self: stretch; */
+        align-self: center;
+      }
+
+      #box4 {
+        flex-basis: content;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Flex -->
+    <div class="container">
+      <div class="box" id="box1">Box1</div>
+      <div class="box" id="box2">Box2</div>
+      <div class="box" id="box3">Box3</div>
+      <div class="box" id="box4">Box4 fgdgfdgg</div>
+    </div>
+  </body>
+</html>
