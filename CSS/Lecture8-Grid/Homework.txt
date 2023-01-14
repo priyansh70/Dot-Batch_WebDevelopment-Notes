@@ -1,0 +1,4 @@
+Q1 - PARALLAX - Z-Index = -1 Need in .container??
+Q2 - PARALLAX - position relative need in container??
+Q3 - Img Tag VS Background-Image Property??
+Q4 - Explore - gird-row, grid-column, and grid-area , align-content,justify-self,justify-item,justify-content,place-items,place-self,align-items

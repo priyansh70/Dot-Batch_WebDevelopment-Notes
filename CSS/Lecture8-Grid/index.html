@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture8 - GRID</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        background-color: yellow;
+        height: 600px;
+        border: 2px solid black;
+        display: grid;
+
+        /* create column  */
+        grid-template-columns: 200px 200px 210px;
+
+        grid-template-columns: 2fr repeat(2, 1fr);
+
+        grid-template-columns: repeat(3, 1fr);
+
+        /* create row */
+        grid-template-rows: 90px 90px 90px 90px;
+        grid-template-rows: repeat(4, 90px);
+        grid-template-rows: 2fr repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        /* GAP  */
+        gap: 15px;
+      }
+
+      .box {
+        background-color: rgb(0, 183, 255);
+        border: 1px solid red;
+        /* height: 100px; */
+        /* width: 100px; */
+      }
+
+      #box1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+
+      #box3 {
+        grid-row-start: 2;
+        grid-row-end: 4;
+      }
+
+
+
+
+
+
+      .layout
+      {
+        display: grid;
+        height: 400px;
+        width: 400px;
+        background-color: rebeccapurple;
+        margin-top: 50px;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 30px repeat(2,1fr) 30px;
+        gap: 3px;
+      }
+
+      .item
+      {
+        background-color: yellow;
+        border: 1px solid black;
+
+      }
+      #item1{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        
+      }
+
+      #item4{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        
+      }
+
+      #item2{
+        grid-row-start: 2;
+        grid-row-end: 4;
+      }
+
+      #item3{
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column: 2/4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="box1">Box1</div>
+      <div class="box" id="box2">Box2</div>
+      <div class="box" id="box3">Box3</div>
+      <div class="box" id="box4">Box4</div>
+      <div class="box" id="box5">Box5</div>
+      <div class="box" id="box6">Box6</div>
+      <div class="box" id="box7">Box7</div>
+      <div class="box" id="box8">Box8</div>
+      <div class="box" id="box9">Box9</div>
+      <div class="box" id="box10">Box10</div>
+    </div>
+
+    <div class="layout">
+        <div class="item" id="item1">Header</div>
+        <div class="item" id="item2">Section</div>
+        <div class="item" id="item3">Side</div>
+        <div class="item" id="item4">Footer</div>
+    </div>
+  </body>
+</html>
