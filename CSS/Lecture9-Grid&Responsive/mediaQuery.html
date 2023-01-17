@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Query</title>
+    <style>
+      .layout {
+        height: 500px;
+        background-color: red;
+        display: grid;
+
+        grid-template: 25px 600px 25px / repeat(3, 300px);
+        grid-template-areas:
+          "h h h"
+          "m c c"
+          "f f f";
+      }
+
+      .header {
+        grid-area: h;
+      }
+      .content {
+        grid-area: c;
+      }
+      .menu {
+        grid-area: m;
+      }
+      .footer {
+        grid-area: f;
+      }
+      .layout div {
+        background-color: yellow;
+        border: 2px solid black;
+      }
+
+
+      @media (max-width: 768px) 
+      {
+        .layout{
+            grid-template: 25px repeat(2,1fr) 25px/100px 400px;
+            grid-template-areas: 
+            'h h'
+            'm m'
+            'c c'
+            'f f';
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="layout">
+      <div class="header">Header</div>
+      <div class="menu">Menu</div>
+      <div class="content">Contemt</div>
+      <div class="footer">Footer</div>
+    </div>
+  </body>
+</html>

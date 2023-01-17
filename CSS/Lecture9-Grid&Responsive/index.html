@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture9</title>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        height: 700px;
+        border: 1px solid red;
+        background-color: yellow;
+
+        display: grid;
+
+        grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+      }
+
+      .box {
+        border: 1px solid green;
+        background-color: aqua;
+      }
+
+      #box1 {
+        grid-area: 1/1/3/5;
+      }
+
+      .layout {
+        height: 500px;
+        background-color: red;
+        display: grid;
+
+        grid-template: 25px 600px 25px / repeat(3, 300px);
+        grid-template-areas:
+          "h h h h h h h h"
+          "m c c c c c c c "
+          "f f f f f f f f";
+      }
+
+      .header {
+        grid-area: h;
+      }
+      .content {
+        grid-area: c;
+      }
+      .menu {
+        grid-area: m;
+      }
+      .footer {
+        grid-area: f;
+      }
+      .layout div {
+        background-color: yellow;
+        border: 2px solid black;
+      }
+
+    /* grid auto row  */
+    .wrapper{
+        /* height: 700px; */
+        border: 1px solid red;
+        background-color: rgb(255, 0, 212);
+        display: grid;
+        gap: 10px;
+
+        grid-template-columns: repeat(3,1fr);
+        grid-auto-rows: minmax(100px,auto);
+    }
+
+    .item {
+        border: 1px solid green;
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Grid Area  -->
+    <div class="container">
+      <div class="box" id="box1">Box1</div>
+      <div class="box" id="box2">Box2</div>
+      <div class="box" id="box3">Box3</div>
+      <div class="box" id="box4">Box4</div>
+      <div class="box" id="box5">Box5</div>
+      <div class="box" id="box6">Box6</div>
+      <div class="box" id="box7">Box7</div>
+      <div class="box" id="box8">Box8</div>
+      <div class="box" id="box9">Box9</div>
+      <div class="box" id="box10">Box10</div>
+      <div class="box" id="box11">Box11</div>
+      <div class="box" id="box12">Box12</div>
+    </div>
+    <br /><br /><br /><br /><br />
+
+    <!-- Grid Template Area -->
+    <div class="layout">
+      <div class="header">Header</div>
+      <div class="menu">Menu</div>
+      <div class="content">Contemt</div>
+      <div class="footer">Footer</div>
+    </div>
+
+    <br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br />
+
+    <div class="wrapper">
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    </div>
+  </body>
+</html>
