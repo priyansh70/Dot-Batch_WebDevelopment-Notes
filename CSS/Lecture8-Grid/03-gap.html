@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gap</title>
+
+    <style>
+        .container{
+            display: grid;
+            background-color: aqua;
+            height: 400px;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,1fr);
+            gap: 4px;
+        }
+
+        .box{
+            background-color: dimgrey;
+            color: #fff;
+            border: 3px solid darkorchid;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Gap</h1>
+    <div class="container">
+        <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+        <div class="box">Box4</div>
+        <div class="box">Box5</div>
+        <div class="box">Box6</div>
+        <div class="box">Box7</div>
+        <div class="box">Box8</div>
+    </div>
+</body>
+</html>
