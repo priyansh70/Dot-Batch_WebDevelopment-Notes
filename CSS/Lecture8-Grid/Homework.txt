@@ -1,4 +1,11 @@
 Q1 - PARALLAX - Z-Index = -1 Need in .container??
+YES
+
 Q2 - PARALLAX - position relative need in container??
+YES
+
+
 Q3 - Img Tag VS Background-Image Property??
-Q4 - Explore - gird-row, grid-column, and grid-area , align-content,justify-self,justify-item,justify-content,place-items,place-self,align-items
+Ans : https://stackoverflow.com/questions/492809/when-to-use-img-vs-css-background-image/492835#492835
+
+Q4 - Explore - gird-row, grid-column, grid-area , align-content,justify-self,justify-item,justify-content,place-items,place-self,align-items

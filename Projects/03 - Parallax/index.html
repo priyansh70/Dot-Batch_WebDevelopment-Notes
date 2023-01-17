@@ -4,123 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Parallax</title>
-
-    <style>
-      * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-      }
-
-      .wrapper {
-        height: 100vh;
-        overflow-y: auto;
-        overflow-x: hidden;
-        perspective: 10px;
-      }
-
-      .container {
-        position: relative;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transform-style: preserve-3d;
-        z-index: -1;
-      }
-
-      .background,
-      .foreground {
-        position: absolute;
-        height: 100vh;
-        width: 100%;
-        object-fit: cover;
-        z-index: -1;
-      }
-
-      .background {
-        transform: translateZ(-40px) scale(5);
-      }
-
-      .foreground {
-        transform: translateZ(-20px) scale(3);
-      }
-
-      h1 {
-        position: absolute;
-        top: 3rem;
-        letter-spacing: 4px;
-        font-size: 7rem;
-        color: white;
-        text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-        margin: 0;
-      }
-
-      section {
-        background: rgb(45, 45, 45);
-        color: #fff;
-        padding: 5rem 0px;
-      }
-
-      .secHeading {
-        font-size: 5rem;
-        padding: 0px 10rem;
-      }
-
-      .text {
-        font-size: 1.25rem;
-        padding: 0 8rem;
-        margin: 5rem 0;
-        /* background: rgb(45, 45, 45); */
-      }
-
-      .bg1 {
-        background-image: url(../Images/sport-1.jpg);
-      }
-
-      .bg2 {
-        background-image: url(../Images/sport-2.jpg);
-      }
-
-      .bg3 {
-        background-image: url(../Images/sport-3.jpg);
-      }
-
-      .bg {
-        position: relative;
-        background-attachment: fixed;
-        width: 100%;
-        height: 500px;
-        background-size: cover;
-        background-position: center;
-      }
-
-      .desc {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        padding: 0.5rem 2.5rem;
-        background-color: white;
-        color: black;
-        border-radius: 10px;
-        border: 2px solid #000;
-      }
-    </style>
+    <title>Parallax Website</title>
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <div class="wrapper">
+    <main>
       <div class="container">
-        <img src="../Images/background.png" class="background" />
-        <img src="../Images/foreground.png" class="foreground" />
-        <h1>ADVENTURE</h1>
+        <img src="./img/background.png" alt="background" id="background" />
+        <img src="./img/foreground.png" alt="foreground" id="foreground" />
+        <h1>Adventure</h1>
       </div>
 
       <section>
-        <h2 class="secHeading">Adventure Time</h2>
+        <h2>Adventure Time !</h2>
         <p class="text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, itaque
+          hic tempore rem eveniet sed repudiandae molestiae magnam aut quod
+          consequatur, harum, totam beatae fugiat ipsam? Explicabo, blanditiis
+          quod similique fugiat fugit ea expedita deleniti doloribus, delectus
+          perferendis, tempore amet maiores libero sapiente voluptatem
+          reprehenderit? Illum alias commodi cupiditate corporis mollitia ab
+          quaerat, ipsum est excepturi vitae a sunt optio.
+          <br /><br />
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui
           necessitatibus commodi alias? Veritatis, eligendi nisi. Amet
           exercitationem, recusandae dolore corrupti laborum aperiam repellendus
@@ -129,21 +34,20 @@
           accusantium! Voluptate laboriosam eum saepe ex veritatis est? Numquam
           eaque autem labore provident dolorum, velit omnis mollitia eos
           adipisci!
-          <br />
-          <br />
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, itaque
-          hic tempore rem eveniet sed repudiandae molestiae magnam aut quod
-          consequatur, harum, totam beatae fugiat ipsam? Explicabo, blanditiis
-          quod similique fugiat fugit ea expedita deleniti doloribus, delectus
-          perferendis, tempore amet maiores libero sapiente voluptatem
-          reprehenderit? Illum alias commodi cupiditate corporis mollitia ab
-          quaerat, ipsum est excepturi vitae a sunt optio.
         </p>
 
-        <div class="bg bg1">
-          <h2 class="desc">BIKING</h2>
+        <div class="box bg1">
+          <h4>biking</h4>
         </div>
         <p class="text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, itaque
+          hic tempore rem eveniet sed repudiandae molestiae magnam aut quod
+          consequatur, harum, totam beatae fugiat ipsam? Explicabo, blanditiis
+          quod similique fugiat fugit ea expedita deleniti doloribus, delectus
+          perferendis, tempore amet maiores libero sapiente voluptatem
+          reprehenderit? Illum alias commodi cupiditate corporis mollitia ab
+          quaerat, ipsum est excepturi vitae a sunt optio.
+          <br /><br />
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui
           necessitatibus commodi alias? Veritatis, eligendi nisi. Amet
           exercitationem, recusandae dolore corrupti laborum aperiam repellendus
@@ -152,21 +56,20 @@
           accusantium! Voluptate laboriosam eum saepe ex veritatis est? Numquam
           eaque autem labore provident dolorum, velit omnis mollitia eos
           adipisci!
-          <br />
-          <br />
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, itaque
-          hic tempore rem eveniet sed repudiandae molestiae magnam aut quod
-          consequatur, harum, totam beatae fugiat ipsam? Explicabo, blanditiis
-          quod similique fugiat fugit ea expedita deleniti doloribus, delectus
-          perferendis, tempore amet maiores libero sapiente voluptatem
-          reprehenderit? Illum alias commodi cupiditate corporis mollitia ab
-          quaerat, ipsum est excepturi vitae a sunt optio.
         </p>
 
-        <div class="bg bg2">
-          <h2 class="desc">PARA GLIDING</h2>
+        <div class="box bg2">
+          <h4>PARA GLIDING</h4>
         </div>
         <p class="text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, itaque
+          hic tempore rem eveniet sed repudiandae molestiae magnam aut quod
+          consequatur, harum, totam beatae fugiat ipsam? Explicabo, blanditiis
+          quod similique fugiat fugit ea expedita deleniti doloribus, delectus
+          perferendis, tempore amet maiores libero sapiente voluptatem
+          reprehenderit? Illum alias commodi cupiditate corporis mollitia ab
+          quaerat, ipsum est excepturi vitae a sunt optio.
+          <br /><br />
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui
           necessitatibus commodi alias? Veritatis, eligendi nisi. Amet
           exercitationem, recusandae dolore corrupti laborum aperiam repellendus
@@ -175,21 +78,20 @@
           accusantium! Voluptate laboriosam eum saepe ex veritatis est? Numquam
           eaque autem labore provident dolorum, velit omnis mollitia eos
           adipisci!
-          <br />
-          <br />
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, itaque
-          hic tempore rem eveniet sed repudiandae molestiae magnam aut quod
-          consequatur, harum, totam beatae fugiat ipsam? Explicabo, blanditiis
-          quod similique fugiat fugit ea expedita deleniti doloribus, delectus
-          perferendis, tempore amet maiores libero sapiente voluptatem
-          reprehenderit? Illum alias commodi cupiditate corporis mollitia ab
-          quaerat, ipsum est excepturi vitae a sunt optio.
         </p>
 
-        <div class="bg bg3">
-          <h2 class="desc">SURFING</h2>
+        <div class="box bg3">
+          <h4>SURFING</h4>
         </div>
         <p class="text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, itaque
+          hic tempore rem eveniet sed repudiandae molestiae magnam aut quod
+          consequatur, harum, totam beatae fugiat ipsam? Explicabo, blanditiis
+          quod similique fugiat fugit ea expedita deleniti doloribus, delectus
+          perferendis, tempore amet maiores libero sapiente voluptatem
+          reprehenderit? Illum alias commodi cupiditate corporis mollitia ab
+          quaerat, ipsum est excepturi vitae a sunt optio.
+          <br /><br />
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui
           necessitatibus commodi alias? Veritatis, eligendi nisi. Amet
           exercitationem, recusandae dolore corrupti laborum aperiam repellendus
@@ -198,17 +100,8 @@
           accusantium! Voluptate laboriosam eum saepe ex veritatis est? Numquam
           eaque autem labore provident dolorum, velit omnis mollitia eos
           adipisci!
-          <br />
-          <br />
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, itaque
-          hic tempore rem eveniet sed repudiandae molestiae magnam aut quod
-          consequatur, harum, totam beatae fugiat ipsam? Explicabo, blanditiis
-          quod similique fugiat fugit ea expedita deleniti doloribus, delectus
-          perferendis, tempore amet maiores libero sapiente voluptatem
-          reprehenderit? Illum alias commodi cupiditate corporis mollitia ab
-          quaerat, ipsum est excepturi vitae a sunt optio.
         </p>
       </section>
-    </div>
+    </main>
   </body>
 </html>

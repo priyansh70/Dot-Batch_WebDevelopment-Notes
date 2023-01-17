@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Row and Column</title>
+
+    <style>
+      .container {
+        display: grid;
+        background-color: aqua;
+        height: 400px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 30px 1fr 30px;
+        text-align: center;
+      }
+
+      .box {
+        background-color: dimgrey;
+        color: #fff;
+        border: 1px solid lightgreen;
+      }
+
+      #header {
+        grid-column: 1/span4;
+      }
+
+      #footer {
+        grid-column: 1/-1;
+      }
+
+      #content {
+        grid-column: 2/4;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Grid Column / Grid Row</h1>
+    <p>
+      <strong>grid row</strong> is shorthand for grid row start and grid row end
+    </p>
+    <p>
+      <strong>grid column</strong> is shorthand for grid column start and grid
+      column end
+    </p>
+    <div class="container">
+      <div class="box" id="header">Header</div>
+      <div class="box" id="menu">Menu</div>
+      <div class="box" id="content">Content</div>
+      <div class="box" id="sidebar">Sidebar</div>
+      <div class="box" id="footer">Footer</div>
+    </div>
+  </body>
+</html>
