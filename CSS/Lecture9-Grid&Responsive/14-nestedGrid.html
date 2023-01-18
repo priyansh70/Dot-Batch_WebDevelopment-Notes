@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Grid</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container
+        {
+            width: 100%;
+            height: 500px;
+            background-color: yellow;
+            display: grid;
+             text-align: center;
+            grid-template-areas: 
+            "h h h h"
+            "m c c b"
+            "f f f f"
+            ;
+            gap: 5px;
+        }
+
+        .box{
+            background-color: #4291cf;
+            border: 2px solid red;
+        }
+
+        #header
+        {
+            grid-area: h;
+        }
+
+        #main{
+            grid-area: m;
+        }
+
+        #content{
+            grid-area: c;
+        }
+        
+        #footer{
+            grid-area: f;
+        }
+
+        #blog{
+            grid-area: b;
+            display: grid;
+            grid-template: repeat(2,1fr)/repeat(2,1fr);
+            padding: 5px;
+            gap: 5px;
+        }
+
+        .blog{
+            background-color: red;
+            border: 2px solid yellow;
+            color: white;
+            font-size: 18px;
+            font-weight: 700;   
+            place-content: center;   
+            place-items: center;       
+        }
+
+        .blog:nth-child(1)
+        {
+            grid-row: 1/4;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="header">Header</div>
+        <div class="box" id="main">Main</div>
+        <div class="box" id="content">Content</div>
+        <div class="box" id="blog">
+            <div class="blog">Study Blog</div>
+            <div class="blog">Business Blog</div>
+            <div class="blog">Sports Blog</div>
+        </div>
+        <div class="box" id="footer">Footer</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Justify Content</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        height: 700px;
+        width: 600px;
+        background-color: yellow;
+
+        display: grid;
+        gap: 10px;
+
+        grid-template: repeat(2, 100px) / repeat(3, 100px);
+
+        justify-content: flex-start;
+        justify-content: flex-end;
+        justify-content: center;
+        justify-content: space-around;
+        justify-content: space-evenly;
+        justify-content: space-between;
+      }
+      .box {
+        background-color: red;
+        border: 1px solid black;
+        border-radius: 0 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="box1">Box1</div>
+      <div class="box" id="box2">Box2</div>
+      <div class="box" id="box3">Box3</div>
+      <div class="box" id="box4">Box4</div>
+      <div class="box" id="box5">Box5</div>
+    </div>
+  </body>
+</html>

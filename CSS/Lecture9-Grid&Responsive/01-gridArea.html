@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Area</title>
+
+    <style>
+     
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+      .container {
+        height: 700px;
+        width: 500px;
+        background-color: yellow;
+
+
+        display: grid;
+        gap: 10px;
+
+
+        grid-template: repeat(3,1fr)/repeat(4,1fr);
+
+      }
+      .box {
+        background-color: red;
+        border: 1px solid black;
+        border-radius: 0 1.5rem;
+      }
+
+      #box1{
+        grid-area: 1/1/2/3;
+        background-color: magenta;
+      }
+
+      #box5{
+        /* grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 4; */
+        
+        grid-area: 2/2/3/4;
+        background-color: mediumaquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="box1">Box1</div>
+      <div class="box" id="box2">Box2</div>
+      <div class="box" id="box3">Box3</div>
+      <div class="box" id="box4">Box4</div>
+      <div class="box" id="box5">Box5</div>
+      <div class="box" id="box6">Box6</div>
+      <div class="box" id="box7">Box7</div>
+      <div class="box" id="box8">Box8</div>
+      <div class="box" id="box9">Box9</div>
+      <div class="box" id="box10">Box10</div>
+    </div>
+  </body>
+</html>
+

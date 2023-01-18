@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Template Area</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        height: 400px;
+        width: 500px;
+        background-color: yellow;
+
+        display: grid;
+        gap: 10px;
+
+        grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+        grid-template-areas:
+          "b1 b2 b2 b3"
+          "b1 b4 b5 b6"
+          "b1 b7 b8 b6";
+      }
+
+      #box1 {
+        grid-area: b1;
+        background-color: #6dbe4f;
+      }
+      #box2 {
+        grid-area: b2;
+        background-color: #6dbe4f;
+      }
+      #box3 {
+        grid-area: b3;
+        background-color: #EC3437;
+      }
+      #box4 {
+        grid-area: b4;
+        background-color: #FBB22F;
+      }
+      #box5 {
+        grid-area: b5;
+        background-color: #EC3437;
+      }
+      #box6 {
+        grid-area: b6;
+        background-color: #6dbe4f;
+      }
+      #box7 {
+        grid-area: b7;
+        background-color: #EC3437;
+      }
+
+      #box8 {
+        grid-area: b8;
+        background-color:#FBB22F;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="box1">Box1</div>
+      <div class="box" id="box2">Box2</div>
+      <div class="box" id="box3">Box3</div>
+      <div class="box" id="box4">Box4</div>
+      <div class="box" id="box5">Box5</div>
+      <div class="box" id="box6">Box6</div>
+      <div class="box" id="box7">Box7</div>
+      <div class="box" id="box8">Box8</div>
+    </div>
+  </body>
+</html>
