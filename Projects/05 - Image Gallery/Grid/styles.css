@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f4f4;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px;
+}
+
+.wrapper h1 {
+  margin: 20px auto;
+  text-align: center;
+  font-size: 40px;
+  color: rgb(51, 51, 51);
+  /* color: #333333; */
+}
+
+.card {
+  width: 100%;
+  border-radius: 10px;
+  position: relative;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card img {
+  height: 100%;
+  width: 100%;
+  filter: grayscale(100%);
+  object-fit: cover;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  filter: drop-shadow(0 0 10px #333);
+}
+
+.card:hover img {
+  filter: grayscale(0);
+}
+
+.card figcaption {
+  position: absolute;
+  bottom: 0;
+  width: fit-content;
+  height: 16%;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  color: #fff;
+  padding: 25px;
+  opacity: 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.card:hover figcaption {
+  opacity: 1;
+  bottom: 40%;
+  color: darkblue;
+  transform: translateY(-50%) rotate(360deg) skew(-10deg);
+  transition: 1s;
+}
