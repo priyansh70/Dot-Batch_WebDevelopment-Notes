@@ -1,0 +1,3 @@
+Q1 - Difference between :root and universal selector(*)?
+Q2 - Create Hire me Button
+Q3 - Create 10 Design Button
