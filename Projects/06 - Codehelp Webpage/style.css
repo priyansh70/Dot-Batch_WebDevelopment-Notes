@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope&family=Poppins&family=Raleway&family=Roboto&display=swap");
 
 * {
   padding: 0;
@@ -11,21 +11,23 @@ html {
   font-family: "Poppins", sans-serif;
 }
 
+/* Header Section  */
 header {
   display: flex;
   justify-content: space-between;
-  padding: 30px 50px 0 70px;
+  /* padding: 30px 50px 0 70px; */
+  padding: 2em 3em 0 6em;
   width: 100%;
   display: flex;
   align-items: center;
 }
 
-header .logo {
+.logo {
   width: 6rem;
   height: 5.2rem;
 }
 
-header .logo img {
+.logo img {
   width: 100%;
   height: 100%;
 }
@@ -58,4 +60,138 @@ header .btn p {
   background: #4e5dc0;
   border-radius: 5px;
   padding: 14px 30px;
+  cursor: pointer;
+}
+
+/* Header Section Ends  */
+
+/* Middle Section  */
+.container {
+  display: grid;
+  grid-template: repeat(2, minmax(150px, 1fr)) / repeat(2, minmax(150px, 1fr));
+  padding: 2em 3em 0 6em;
+  gap: 3rem;
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 4em auto;
+}
+
+.container .texts {
+  margin-top: 2em;
+}
+
+.head {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 45px;
+  color: #16171c;
+}
+
+.container .texts hr {
+  width: 14em;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  margin: 1.25em 0;
+}
+
+.para {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 34px;
+  color: #808080;
+}
+
+.container .imgContainer {
+  border-radius: 30px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.image1 {
+  width: 32em;
+  height: 25em;
+}
+
+.image2 {
+  width: 27em;
+  height: 27em;
+}
+
+.container .imgContainer img {
+  width: 100%;
+  height: 100%;
+}
+
+.line {
+  border: 1.5px solid #e1e2e4;
+}
+
+/* Footer  */
+footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 2em 3em 0 2em;
+}
+
+footer h3 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #4e5dc0;
+  margin-bottom: 1rem;
+}
+
+footer .policy {
+  text-decoration-line: underline;
+  margin: 3rem 0 1rem 0;
+}
+
+footer p {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 32px;
+  color: #999999;
+  margin-bottom: 2.5rem;
+}
+
+footer ul li {
+  list-style-type: none;
+}
+
+footer ul li a {
+  text-decoration: none;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  color: #999999;
+}
+
+footer .footer4 span {
+  width: 48px;
+  height: 48px;
+  background: #4e5dc0;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: 900;
+  position: relative;
+  font-size: 16px;
+  display: inline-block;  
+}
+
+footer .footer4 span i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
