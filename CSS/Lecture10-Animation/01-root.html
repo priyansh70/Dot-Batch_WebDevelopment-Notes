@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Root</title>
+
+    <style>
+      :root {
+        --color: hsl(324, 100%, 16%);
+        --text-color: hsl(165, 100%, 50%);
+      }
+
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        background-color: var(--color);
+        width: 100vw;
+        height: 100vh;
+      }
+
+      .box {
+        color: var(--text-color);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium,
+        ipsum.
+      </div>
+    </div>
+  </body>
+</html>
