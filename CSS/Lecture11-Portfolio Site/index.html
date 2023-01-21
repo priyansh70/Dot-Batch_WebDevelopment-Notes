@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+
+    <!-- Link CSS  -->
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="container">
+        <!-- Nav Bar  -->
+        <nav>
+          <div class="logoContainer">
+            <img src="../Images/userAsset/NavLogo.jpg" alt="#" class="logo" />
+            <div class="logoText">ohn Doe</div>
+          </div>
+          <div class="navItems">
+            <div>
+              <a href="#project">Project</a>
+            </div>
+            <div><a href="#skills">Skill</a></div>
+            <div><a href="#contactus">Contact Us</a></div>
+          </div>
+        </nav>
+
+        <!-- Hero Section  -->
+
+        <div class="heroSection">
+          <div class="fadedText absolute">John Doe</div>
+          <div class="heroLeft">
+            <div class="heroHeading">Hi! John Doe</div>
+            <div class="heroHeading heroSubHeading">
+              I am a <span class="role"></span>
+            </div>
+
+            <div class="heroDescription">
+              I’m a software developer and here is my portfolio website. Here
+              you’ll learn about my journey as a software developer.
+            </div>
+
+            <div class="btn" id="btn">Hire Me</div>
+          </div>
+
+          <div class="heroRight">
+            <div class="absolute icons iconDots">
+              <img src="../images/userAsset/dots.png" alt="" />
+            </div>
+            <div class="absolute icons iconCube">
+              <img src="../images/userAsset/cube.png" alt="" />
+            </div>
+            <div class="absolute icons iconCircle">
+              <img src="../images/userAsset/circle.png" alt="" />
+            </div>
+            <div class="absolute icons iconZigZag">
+              <img src="../images/userAsset/zigzags.png" alt="" />
+            </div>
+            <div class="absolute icons iconPlus">
+              <img src="../images/userAsset/plus.png" alt="" />
+            </div>
+            <div class="userImage">
+              <img src="../images/userAsset/UserImage.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="projectSection">
+        <h2 class="pageHeader">Projects</h2>
+        <div class="projectContainer">
+          <div class="projectCard" id="project1">
+            <div class="projectNumber">01</div>
+            <div class="projectContent">
+              <div class="projectSkillsContainer">
+                <img
+                  class="project-skill"
+                  src="./images/stack/HTML.png"
+                  alt=""
+                />
+                <img
+                  class="project-skill"
+                  src="./images/stack/CSS.png"
+                  alt=""
+                />
+                <img
+                  class="project-skill"
+                  src="./images/stack/Javascript.svg"
+                  alt=""
+                />
+                <img
+                  class="project-skill"
+                  src="./images/stack/Express.png"
+                  alt=""
+                />
+                <img
+                  class="project-skill"
+                  src="./images/stack/NextJsCircle.png"
+                  alt=""
+                />
+                <img
+                  class="project-skill"
+                  src="./images/stack/Tailwind.png"
+                  alt=""
+                />
+                <img
+                  class="project-skill"
+                  src="./images/stack/NodeJs.svg"
+                  alt=""
+                />
+                <img
+                  class="project-skill"
+                  src="./images/stack/MongoDB.svg"
+                  alt=""
+                />
+                <img
+                  class="project-skill"
+                  src="./images/stack/Redux.svg"
+                  alt=""
+                />
+                <img
+                  class="project-skill"
+                  src="./images/stack/Vercel.svg"
+                  alt=""
+                />
+              </div>
+              <h2 class="projectHeading">Tint & Orange</h2>
+              <div class="projectSubHeading">
+                Its is a car modification copany which provide you sheets to
+                protect your car from scratch
+              </div>
+              <div class="btnGroup">
+                <div class="btn">Read More</div>
+                <a href="">
+                  <i title="GitHubLink" class="fa-brands fa-github icon"></i>
+                </a>
+                <a href="">
+                  <i title="Live Link" class="fa-solid fa-link icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var typeData = new Typed(".role", {
+        strings: [
+          "Full Stack Developer",
+          "Web Developer",
+          "UI-UX Designer",
+          "Backend Developer",
+          "Coder",
+        ],
+        loop: true,
+        typeSpeed: 100,
+        backSpeed: 80,
+        backDelay: 1000,
+      });
+    </script>
+  </body>
+</html>

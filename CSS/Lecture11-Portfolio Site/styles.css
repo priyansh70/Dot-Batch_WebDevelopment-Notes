@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+:root {
+  --bgOrange: #e84949;
+}
+
+#wrapper {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.logo {
+  width: 80px;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+}
+
+.logoText {
+  margin-left: -1.2rem;
+  font-size: 28px;
+}
+
+.navItems {
+  display: flex;
+  gap: 2rem;
+  padding: 0 4rem;
+}
+
+.navItems div {
+  font-style: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.navItems div a {
+  color: black;
+  transition: 0 5s;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navItems div a:hover {
+  font-weight: bold;
+}
+
+.heroSection {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem auto;
+  gap: 5rem;
+  padding: 0 1rem;
+  padding-bottom: 8rem;
+}
+
+.fadedText {
+  user-select: none;
+  font-size: 7em;
+  color: #e7e7e7;
+  bottom: -16%;
+  left: -5%;
+  font-weight: bold;
+  transition: all 3s;
+}
+
+.heroLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.heroHeading {
+  font-size: 35px;
+  color: #343d68;
+  font-weight: 500;
+}
+
+.role {
+  font-weight: 800;
+  color: #4e45d5;
+}
+
+.heroSubHeading {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.heroDescription {
+  margin-top: 1rem;
+  width: 70%;
+  font-weight: 500;
+}
+
+.btn {
+  background-color: var(--bgOrange);
+  width: fit-content;
+  color: white;
+  padding: 0.8rem 2.3rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  background-color: black;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 0.5s ease;
+}
+
+.btn:hover {
+  color: var(--bgOrange);
+}
+
+.btn:hover::before {
+  transform: scaleX(1);
+}
+
+.heroRight {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.userImage {
+  padding: 2.5rem;
+  filter: grayscale(1);
+  transition: all 1s;
+  animation: scaleImage 5s linear infinite;
+}
+
+.userImage img {
+  z-index: -9;
+}
+
+@keyframes scaleImage {
+  0% {
+    transform: scale(1);
+    filter: grayscale(0);
+  }
+
+  50% {
+    transform: scale(1.1);
+    filter: grayscale(1);
+    box-shadow: 3px 3px 10px black;
+  }
+
+  100% {
+    transform: scale(1);
+    filter: grayscale(0);
+  }
+}
+
+.iconDots {
+  z-index: 9;
+  bottom: -1rem;
+  right: 0;
+  animation: dotsAnimation 5s linear infinite;
+}
+
+@keyframes dotsAnimation {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.iconCube {
+  z-index: 9;
+  top: -0.8em;
+  right: 1em;
+  animation: cubeRotate 3s linear infinite;
+}
+
+@keyframes cubeRotate {
+  0% {
+    transform: rotateY(0deg) translateY(0px);
+  }
+  50% {
+    transform: rotateY(180deg) translateY(-12px);
+  }
+  100% {
+    transform: rotateY(360deg) translateY(0);
+  }
+}
+
+.iconCircle {
+  z-index: 9;
+  bottom: 0;
+  left: 0;
+  animation: shapeEffect 6s linear infinite;
+}
+
+@keyframes shapeEffect {
+  0% {
+    left: 0;
+    bottom: 0;
+  }
+  50% {
+    left: 5%;
+    bottom: 10%;
+  }
+}
+
+.iconZigZag{
+    z-index: 9;
+    top: 1.5rem;
+    left: -0.3rem;
+    animation: zigZagEffect 5s ease-in infinite;
+}
+
+@keyframes zigZagEffect {
+    50%{
+        left: 5%;
+        top: 2%;
+    }
+}
+
+.iconPlus{
+    z-index: 9;
+    top: -0.8rem;
+    left: 50%;
+    animation: plusEffect 5s ease-in infinite;
+}
+
+@keyframes plusEffect {
+    50%{
+        top: 3%;
+        left: 48%;
+    }
+}
