@@ -38,6 +38,7 @@ header p {
 }
 
 header p a {
+  cursor: pointer;
   color: #e6e5e5;
 }
 
@@ -60,22 +61,23 @@ header p a {
   width: 48%;
 }
 
-.blog{
+.blog {
   border: 2px solid #999;
   padding: 15px 30px;
   background: #2c1c7c;
   color: #ffeeaa;
 }
 
-.blog a , .blog p{
-    color: #f3e093;
-    margin: 8px 0;
+.blog a,
+.blog p {
+  color: #f3e093;
+  margin: 8px 0;
 }
 
-.blog a{
-    transition: transform 0.5s ease;
-    margin: 4px 0;
-    display: inline-block;
+.blog a {
+  transition: transform 0.5s ease;
+  margin: 4px 0;
+  display: inline-block;
 }
 
 .blog h2 {
@@ -83,8 +85,8 @@ header p a {
   color: #ff9100;
 }
 
-.blog h4{
-    color: #ffff00;
+.blog h4 {
+  color: #ffff00;
 }
 
 .left {
@@ -95,7 +97,7 @@ header p a {
   border-radius: 10px 0 0 10px;
 }
 
-.blog a:hover{
-    transform: scale(1.1);
-    border-bottom: 2px solid rgb(47, 0, 255);
+.blog a:hover {
+  transform: scale(1.1);
+  border-bottom: 2px solid #ff00dd;
 }
