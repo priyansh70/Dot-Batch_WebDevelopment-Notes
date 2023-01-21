@@ -43,7 +43,7 @@ header p a {
 }
 
 .container {
-  border: 1px solid #999;
+  /* border: 1px solid #999; */
   margin: 50px 150px;
   gap: 50px;
   display: flex;
