@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&family=Poppins&family=Raleway&family=Roboto&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #191627;
+}
+
+header {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header h1 {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: underline;
+  font-size: 35px;
+  line-height: 30px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #e6e5e5;
+}
+
+header p {
+  color: #e6e5e5;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 15px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+header p a {
+  color: #e6e5e5;
+}
+
+.container {
+  border: 1px solid #999;
+  margin: 50px 150px;
+  gap: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  /* margin-bottom: 60px; */
+}
+
+.left,
+.right {
+  width: 48%;
+}
+
+.blog{
+  border: 2px solid #999;
+  padding: 15px 30px;
+  background: #2c1c7c;
+  color: #ffeeaa;
+}
+
+.blog a , .blog p{
+    color: #f3e093;
+    margin: 8px 0;
+}
+
+.blog a{
+    transition: transform 0.5s ease;
+    margin: 4px 0;
+    display: inline-block;
+}
+
+.blog h2 {
+  margin: 5px 0;
+  color: #ff9100;
+}
+
+.blog h4{
+    color: #ffff00;
+}
+
+.left {
+  border-radius: 0 10px 10px 0;
+}
+
+.right {
+  border-radius: 10px 0 0 10px;
+}
+
+.blog a:hover{
+    transform: scale(1.1);
+    border-bottom: 2px solid rgb(47, 0, 255);
+}

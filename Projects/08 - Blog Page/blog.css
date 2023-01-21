@@ -1,0 +1,61 @@
+section{
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: 75% 25%;
+    grid-auto-rows: auto;    
+    margin: 50px 150px;
+    color: #b0e9ff;
+    gap: 40px;
+}
+
+
+section h2,h3{
+    color: yellow;
+    margin: 15px 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+section .date{
+    font-size: 12px;
+    line-height: 15px;
+    margin: 0 0 4px 0;
+}
+
+.text{
+    margin: 12px 0;
+}
+
+.borderText{
+    border: 1px solid #999;
+    margin: 10px 0;
+}
+
+section ul,section ol
+{
+    margin-left: 50px;
+}
+
+section .buttons button {
+    border-radius: 30%;
+    padding: 10px 20px;
+    color: #ffad61;
+    font-weight: 700;
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid #999;
+    margin: 10px 8px 10px 0;
+    transition: background-color 0.5s ease;
+}
+
+section .buttons button:hover{
+    background-color: #fff;
+    color: blue;
+}
+
+section aside .archives{
+    margin: 60px 0;    
+}
+section aside a{
+    display: block;
+    color: #398fff;
+}
