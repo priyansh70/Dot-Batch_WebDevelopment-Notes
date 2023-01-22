@@ -1,3 +1,8 @@
 Q1 - Difference between :root and universal selector(*)?
+Ans : https://stackoverflow.com/questions/60680887/root-html-selector-any-differences
+
 Q2 - Create Hire me Button
-Q3 - Create 10 Design Button
+Ans : In Project section
+
+Q3 - Create 10 Modern Design Button
+Ans : Design according to you
