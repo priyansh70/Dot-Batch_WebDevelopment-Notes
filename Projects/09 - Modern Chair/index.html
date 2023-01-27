@@ -1,27 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Modern Chair</title>
 
-    <!-- Link CSS  -->
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
-    <div id="wrapper">
-      <div class="container">
-        <div class="information">
-          <p class="titleUp">MODERN CHAIR</p>
-          <h1>Telford Longue</h1>
-          <h4>$254 <span>$530</span></h4>
-          <label for="desc">Description</label>
-          <input type="radio" id="desc" class="descriptionBtn" name="desc-btn">
-          <label for="details">Details</label>
-          <input type="radio" id="details" class="descriptionBtn" name="desc-btn">
-        </div>
-      </div>
-    </div>
-  </body>
+<head>
+	<meta charset="UTF8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=devicewidth, initialscale=1.0" />
+	<title>Modern Chair Page</title>
+	<link rel="shortcut icon" href="./images/favicon.ico" type="image/xicon" />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css" />
+	<link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="container">
+			<div class="infoWrap mobMargin">
+				<p class="titleUp">Modern chair</p>
+				<h2>Telford Longue</h2>
+				<h4>$254 <span>$530</span></h4>
+				<div class="sectionFluid">
+					<input class="descBtn" type="radio" id="desc1" name="descbtn" checked />
+					<label for="desc1">Description</label>
+					<input class="descBtn" type="radio" id="desc2" name="descbtn" />
+					<label for="desc2">Details</label>
+					<div class="sectionFluid descSec accor1">
+						<p>
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id totam tempora enim officia
+							veritatis hic.
+						</p>
+					</div>
+					<div class="sectionFluid descSec accor2">
+						<div class="sectionInline">
+							<p><span>80</span>cm<br />Length</p>
+						</div>
+						<div class="sectionInline">
+							<p><span>65</span>cm<br />Width</p>
+						</div>
+						<div class="sectionInline">
+							<p><span>90</span>cm<br />Height</p>
+						</div>
+						<div class="sectionInline">
+							<p><span>17.6</span>lbs<br />Weight</p>
+						</div>
+					</div>
+				</div>
+				<h5>Choose Color:</h5>
+			</div>
+			<input class="colorBtn forColor1" type="radio" id="color1" name="colorbtn" checked />
+			<label class="firstColor" for="color1"></label>
+			<input class="colorBtn forColor2" type="radio" id="color2" name="colorbtn" />
+			<label class="color2" for="color2"></label>
+			<input class="colorBtn forColor3" type="radio" id="color3" name="colorbtn" />
+			<label class="color3" for="color3"></label>
+			<input class="colorBtn forColor4" type="radio" id="color4" name="colorbtn" />
+			<label class="color4" for="color4"></label>
+			<input class="colorBtn forColor5" type="radio" id="color5" name="colorbtn" />
+			<label class="color5" for="color5"></label>
+			<input class="colorBtn forColor6" type="radio" id="color6" name="colorbtn" />
+			<label class="color6" for="color6"></label>
+			<div class="infoWrap">
+				<a href="#" class="btn"><i class="uil uilshoppingcart icon"></i> Add To Cart</a>
+			</div>
+			<div class="imgWrap chair1"></div>
+			<div class="imgWrap chair2"></div>
+			<div class="imgWrap chair3"></div>
+			<div class="imgWrap chair4"></div>
+			<div class="imgWrap chair5"></div>
+			<div class="imgWrap chair6"></div>
+			<div class="backColor"></div>
+			<div class="backColor chair2"></div>
+			<div class="backColor chair3"></div>
+			<div class="backColor chair4"></div>
+			<div class="backColor chair5"></div>
+			<div class="backColor chair6"></div>
+		</div>
+	</div>
+
+</body>
+
 </html>
