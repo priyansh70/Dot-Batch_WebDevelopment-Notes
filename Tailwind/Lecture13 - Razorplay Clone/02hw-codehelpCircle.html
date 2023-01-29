@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Circle Animation</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+        background-color: #0087ab;
+      }
+
+      .outerCircle{
+        z-index: 10;
+        position: relative;
+        width: 400px;
+        height: 350px;
+      }
+
+      .outerCircle div,
+      .innerCircle div{
+        width: 70px;
+        height: 70px;
+      }
+
+      .outerCircle div img
+      .innerCircle div img{
+        width: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="outerCircle">
+        <div class="image"><img src="../Images/adobe.png" alt="" /></div>
+        <div class="image"><img src="../Images/apple.png" alt="" /></div>
+        <div class="image"><img src="../Images/meta.png" alt="" /></div>
+        <div class="image"><img src="../Images/google.png" alt="" /></div>
+        <div class="image"><img src="../Images/mircosoft.png" alt="" /></div>
+        <div class="image"><img src="../Images/netflix.png" alt="" /></div>
+
+        <div class="innerCircle">
+            <div class="image"><img src="../Images/ola.png" alt=""></div>
+            <div class="image"><img src="../Images/adobe.png" alt=""></div>
+            <div class="image"><img src="../Images/linkedin.png" alt=""></div>
+            <div class="image"><img src="../Images/flipkart.png" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
