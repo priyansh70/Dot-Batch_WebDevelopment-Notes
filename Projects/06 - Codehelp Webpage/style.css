@@ -11,6 +11,13 @@ html {
   font-family: "Poppins", sans-serif;
 }
 
+#wrapper{
+  height: 100vh;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
 /* Header Section  */
 header {
   display: flex;
@@ -69,10 +76,10 @@ header .btn p {
 .container {
   display: grid;
   grid-template: repeat(2, minmax(150px, 1fr)) / repeat(2, minmax(150px, 1fr));
-  padding: 2em 3em 0 6em;
+  padding: 2em 6em 0 6em;
   gap: 3rem;
   overflow: hidden;
-  max-width: 1200px;
+  max-width: 1080px;
   margin: 4em auto;
 }
 
@@ -105,9 +112,9 @@ header .btn p {
 }
 
 .container .imgContainer {
-  border-radius: 30px;
   overflow: hidden;
   object-fit: cover;
+  padding: 8px;
 }
 
 .image1 {
@@ -121,6 +128,7 @@ header .btn p {
 }
 
 .container .imgContainer img {
+  border-radius: 30px;
   width: 100%;
   height: 100%;
 }
