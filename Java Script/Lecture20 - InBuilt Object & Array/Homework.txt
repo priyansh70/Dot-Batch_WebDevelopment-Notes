@@ -1,3 +1,9 @@
 Q - Apply Combining and Slicing on a Object
+Ans -  23 file 
+
+
 Q - Object Sort using callback function
+Ans - 24 file
+
 Q - Sort Array By Callback func
+Ans - 18 File
