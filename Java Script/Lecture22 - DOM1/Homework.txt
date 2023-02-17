@@ -1,0 +1,2 @@
+Q1 - Explore .outerHTML
+Q2 - Explore .parent
