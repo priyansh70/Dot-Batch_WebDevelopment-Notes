@@ -1,0 +1,4 @@
+Task1 :
+Apply Event Listener to change all h2's background color to green 
+
+Q2 - Can we Execute our event in At Target Phase?
