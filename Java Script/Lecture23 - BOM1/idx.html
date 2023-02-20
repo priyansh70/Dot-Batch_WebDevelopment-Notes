@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+
+    <style>
+      body {
+        height: 100vh;
+        width: 100%;
+        overflow: hidden scroll;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: 0.5s;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .btn {
+        background-color: black;
+        padding: 10px 20px;
+        border-radius: 10px 4px 10px 4px;
+        color: white;
+        font-weight: 700;
+        font-size: 20px;
+        margin: 100px 500px;
+        cursor: pointer;
+      }
+
+      .container {
+        background-color: yellow;
+        padding: 10px 20px;
+        border-radius: 20px 4px 20px 4px;
+        color: red;
+        font-weight: 700;
+        font-size: 14px;
+        position: relative;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .container span {
+        background-color: purple;
+        transform: skewX(-10deg);
+        color: white;
+        padding: 4px;
+        border: 3px solid red;
+        cursor: pointer;
+        display: inline-block;
+      }
+
+      .container a{
+        text-decoration: none;
+        color: black;
+        font-weight: 800;
+        padding: 5px 10px;
+        border-radius: 10px 4px 10px 4px;
+        background-color: aliceblue;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="btn" id="btn">Change Body Color</button>
+
+    <div class="container">
+      <h1>This is <span id="head">Heading</span></h1>
+      <a href="https://www.google.com/">Clink on Me</a>
+      <a href="https://www.google.com/">Clink on Me</a>
+      <a id="link" href="https://www.google.com/">Clink on Me <span>Not Work</span> </a>
+    </div>
+    <!-- <script src="./01-monitorEvents.js"></script> -->
+    <!-- <script src="./02-unMonitorEvents.js"></script> -->
+    <script src="./03-addEventListener.js"></script>
+    <!-- <script src="./04-removeEventListener.js"></script> -->
+    <!-- <script src="./05-dispatchEvent.js"></script> -->
+    <!-- <script src="./06-bubblingPhase.js"></script> -->
+    <!-- <script src="./07-capturingPhase.js"></script> -->
+    <!-- <script src="./08-eventObject.js"></script> -->
+    <script src="./09-preventDefault.js"></script>
+    <script src="./10-avoidTooManyEvents.js"></script>
+  </body>
+</html>
