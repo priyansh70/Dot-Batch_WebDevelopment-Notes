@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Increment & Decrement</title>
+  </head>
+
+  <body>
+    <!-- Wrapper  -->
+    <div
+      class="w-[100vw] h-[100vh] flex flex-col items-center justify-center bg-[#344151] gap-10"
+    >
+      <div class="text-[#0398d4] font-medium text-[20px]">
+        Increment and Decrement
+      </div>
+
+      <div
+        class="bg-white flex flex-row text-[25px] text-[#344151] rouded-sm gap-12 p-3 px-5"
+      >
+        <button onclick="decrement()" class="border-r-2 border-[#bfbfbf] pr-5">
+          <i class="fa-solid fa-minus"></i>
+        </button>
+        <div id="count" class="font-bold">0</div>
+        <button onclick="increment()" class="border-l-2 border-[#bfbfbf] pl-5">
+          <i class="fa-solid fa-plus"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Link Tailwind  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Link Font Awesome  -->
+    <script
+      src="https://kit.fontawesome.com/5b12999530.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Link External CSS  -->
+    <script src="./index.js"></script>
+  </body>
+</html>

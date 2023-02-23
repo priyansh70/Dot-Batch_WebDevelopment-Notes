@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #000;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  }
+  
+  .wrapper {
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .circle1 {
+    position: fixed;
+    top: 5%;
+    left: 30%;
+    width: 13em;
+    height: 13em;
+    border-radius: 50%;
+    box-shadow: 0 0 50px #d84869;
+    background: linear-gradient(-25deg, #d84869, #f46641);
+    animation: circle1Animate 15s infinite;
+  }
+  
+  @keyframes circle1Animate {
+    50% {
+      left: 33%;
+      top: 4%;
+      scale: 1.11;
+    }
+  }
+  
+  .circle2 {
+    position: absolute;
+    bottom: 5%;
+    right: 30%;
+    width: 19em;
+    height: 19em;
+    border-radius: 50%;
+    box-shadow: 0 0 50px #5648d8;
+    background: linear-gradient(-25deg, #5648d8, #8641f4);
+    animation: circle2Animate 8s infinite;
+  }
+  @keyframes circle2Animate {
+    50% {
+      bottom: 6%;
+      right: 31%;
+    }
+  }
+  .card-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    height: 450px;
+    border: 2px solid #ffffff30;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #ffffff1a;
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    color: #ffffff;
+    padding: 20px 50px;
+  }
+  .card-wrapper div img {
+    border: 2px solid #ffffff30;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  .designation h3 {
+    text-align: center;
+    color: #ffffff85;
+  }
+  .user-name h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .bottom-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .btn-share {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    padding: 9px 12px;
+    background: #ffffff00;
+    border: 2px solid #ffffffb9;
+    text-transform: capitalize;
+    border-radius: 4px;
+    color: #ffffffb9;
+    cursor: pointer;
+  }
+  .btn-follow {
+    text-transform: capitalize;
+    width: 150px;
+    padding: 9px 12px;
+    background: #ffffff00;
+    border: 2px solid #ffffffb9;
+    border-radius: 4px;
+    color: #ffffffb9;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+  .btn-card:hover {
+    background: #ffffffb9;
+    color: #131313;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    border: 2px solid #ffffff59;
+    width: 500px;
+    scale: 0;
+    background: #00000088;
+    backdrop-filter: blur(10px);
+    color: white;
+    z-index: 1;
+    padding: 20px 25px;
+    border-radius: 20px;
+    transition: 0.5s ease-in-out;
+  }
+  .modal-header {
+    display: flex;
+    margin-bottom: 25px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #ffffff88;
+  }
+  .modal-header div i {
+    font-size: 30px;
+  }
+  .close {
+    cursor: pointer;
+  }
+  .icon-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .icon {
+    border: 1px solid #ffffff88;
+    padding: 17px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+    gap: 10px;
+    justify-content: center;
+    transition: all 0.5s;
+    margin-bottom: 25px;
+    text-decoration: none;
+  }
+  .icon i {
+    font-size: 27px;
+  }
+  
+  #facebook {
+    color: #1771e6;
+    border: 1px solid #1771e6;
+  }
+  #facebook:hover {
+    background-color: #1771e6;
+    color: #fff;
+  }
+  
+  #twitter {
+    color: #1c99e6;
+    border: 1px solid #1c99e6;
+  }
+  #twitter:hover {
+    background-color: #1c99e6;
+    color: #fff;
+  }
+  
+  #instagram {
+    color: #cb2770;
+    border: 1px solid #cb2770;
+  }
+  #instagram:hover {
+    background-color: #cb2770;
+    color: #fff;
+  }
+  
+  #whatsapp {
+    color: #2fe664;
+    border: 1px solid #2fe664;
+  }
+  #whatsapp:hover {
+    background-color: #2fe664;
+    color: #fff;
+  }
+  
+  #telegram {
+    color: #0081c2;
+    border: 1px solid #0081c2;
+  }
+  #telegram:hover {
+    background-color: #0081c2;
+    color: #fff;
+  }
+  
+  .active {
+    scale: 1;
+  }
+  .overlay {
+    position: fixed;
+    background-color: #5f5f5f83;
+    top: 0;
+    opacity: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    transition: 0.5s ease-in-out;
+  }
+  .overlayactive {
+    opacity: 1;
+    pointer-events: initial;
+  }
+  @media (max-width: 850px) {
+    .card-wrapper {
+      max-width: 250px;
+      width: 300px;
+    }
+    .bottom-group {
+      flex-direction: column;
+    }
+    .modal {
+      width: 70vw;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .card-wrapper {
+      position: static;
+      top: 0;
+      left: 0;
+      translate: 0 0;
+      margin: 0 12px;
+      padding: 0 10px;
+    }
+    .card-wrapper div img {
+      width: 120px;
+      height: 120px;
+    }
+    .user-name h2 {
+      font-size: 1.3rem;
+    }
+    .modal {
+      width: 80vw;
+    }
+  }
