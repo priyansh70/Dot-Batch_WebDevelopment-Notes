@@ -10,7 +10,7 @@
       body {
         height: 100vh;
         width: 100%;
-        overflow: hidden scroll;
+        overflow: hidden;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -25,7 +25,7 @@
         color: white;
         font-weight: 700;
         font-size: 20px;
-        margin: 100px 500px;
+        margin: 50px 500px 100px;
         cursor: pointer;
       }
 
@@ -40,7 +40,7 @@
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         display: flex;
         justify-content: center;
-        flex-direction: column;;
+        flex-direction: column;
         align-items: center;
         gap: 10px;
       }
@@ -55,13 +55,29 @@
         display: inline-block;
       }
 
-      .container a{
+      .container a {
         text-decoration: none;
         color: black;
         font-weight: 800;
         padding: 5px 10px;
         border-radius: 10px 4px 10px 4px;
         background-color: aliceblue;
+      }
+
+      .card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+      }
+      .card h2 {
+        width: 200px;
+        height: 50px;
+        padding: 5px;
+        margin: 10px;
+        border-radius: 10px 4px 10px 4px;
+        text-align: center;
       }
     </style>
   </head>
@@ -72,8 +88,24 @@
       <h1>This is <span id="head">Heading</span></h1>
       <a href="https://www.google.com/">Clink on Me</a>
       <a href="https://www.google.com/">Clink on Me</a>
-      <a id="link" href="https://www.google.com/">Clink on Me <span>Not Work</span> </a>
+      <a id="link" href="https://www.google.com/"
+        >Clink on Me <span>Not Work</span>
+      </a>
     </div>
+
+    <div class="card">
+      <h2>we are h2</h2>
+      <h2>we are h2</h2>
+      <h2>we are h2</h2>
+      <h2>we are h2</h2>
+      <h2>we are h2</h2>
+      <h2>we are h2</h2>
+      <h2>we are h2</h2>
+      <h2>we are h2</h2>
+      <h2>we are h2</h2>
+      <h2>we are h2</h2>
+    </div>
+
     <!-- <script src="./01-monitorEvents.js"></script> -->
     <!-- <script src="./02-unMonitorEvents.js"></script> -->
     <script src="./03-addEventListener.js"></script>
@@ -83,6 +115,7 @@
     <!-- <script src="./07-capturingPhase.js"></script> -->
     <!-- <script src="./08-eventObject.js"></script> -->
     <script src="./09-preventDefault.js"></script>
-    <script src="./10-avoidTooManyEvents.js"></script>
+    <!-- <script src="./10-avoidTooManyEvents.js"></script> -->
+    <script src="./11-hw1-colorH2.js"></script>
   </body>
 </html>
