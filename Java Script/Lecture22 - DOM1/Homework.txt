@@ -1,2 +1,5 @@
 Q1 - Explore .outerHTML
+Ans : 10-outerHTML.js
+
 Q2 - Explore .parent
+Ans : 22-hw2-parent.js
