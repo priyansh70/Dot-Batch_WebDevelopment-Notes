@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <pre>
+      <h1>The PUT method</h1>
+      <h3>
+        The PUT method is most often used to update an existing resource. If you want to update 
+        a specific resource (which comes with a specific URI), you can call the PUT method to 
+        that resource URI with the request body containing the complete new version of the 
+        resource you are trying to update.
+
+      </h3>
+    </pre>
+
+    <script>
+        // Before Changes 
+        fetch("https://jsonplaceholder.typicode.com/todos/5")
+        .then((response) => response.json())
+        .then((json) => console.log(json));
+
+        // PUT to the resource with id = 5 to change the name of task
+       fetch('https://jsonplaceholder.typicode.com/todos/5', {
+               method: 'PUT',
+               body: JSON.stringify({
+                   userId: 1,
+                   id: 5,
+                   title: "hello task",
+                   completed: false
+               }),
+               headers: {
+                   "Content-type": "application/json; charset=UTF-8"
+               
+           }})
+           .then(response => response.json())
+           .then(json => console.log(json))
+
+       /* will return
+       
+           "userId": 1,
+           "id": 5,
+           "title": "hello task",
+           "completed": false
+       
+       */
+    </script>
+  </body>
+</html>

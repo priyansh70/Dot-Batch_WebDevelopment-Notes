@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <pre>
+      <h1>The GET method</h1>
+      <h3>
+        The GET method is used to retrieve data from the server. This is a read
+        only method, so it has no risk of mutating or corrupting the data. For
+        example, if we call the get method on our API, we will get back a list
+        of all to-do’s.
+      </h3>
+    </pre>
+
+
+    <script>
+      // GET retrieve all to-do's
+      fetch("https://jsonplaceholder.typicode.com/todos")
+        .then((response) => response.json())
+        .then((json) => console.log(json));
+      // will return all resources
+
+      // GET retrieves the to-do with specific URI (in this case id = 5)
+      fetch("https://jsonplaceholder.typicode.com/todos/5")
+        .then((response) => response.json())
+        .then((json) => console.log(json));
+
+      /* will return this specific resource:
+       
+           "userId": 1,
+           "id": 5,
+           "title": "laboriosam mollitia et enim quasi adipisci quia provident illum",
+           "completed": false
+       
+       */
+    </script>
+  </body>
+</html>

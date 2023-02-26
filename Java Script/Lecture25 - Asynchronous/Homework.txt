@@ -1,6 +1,12 @@
 Explore
 👉 Get
-👉 Post
-👉 Put
-👉 Delete
+Ans : 21-hw1-get.html
 
+👉 Post
+Ans : 22-hw2-post.html
+
+👉 Put
+Ans : 23-hw3-put.html
+
+👉 Delete
+Ans : 24-hw4-delete.html
