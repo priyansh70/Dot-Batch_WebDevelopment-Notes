@@ -1,3 +1,0 @@
-{
-    "livePreview.defaultPreviewPath": "/index.html"
-}
