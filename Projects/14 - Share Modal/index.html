@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Share Modal</title>
+
+    <!-- Link Favicon  -->
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+
+    <!-- Link CSS  -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- link JS  -->
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <!-- wrapper -->
+
+    <div class="wrapper">
+      <!-- circles  -->
+      <div class="circle1"></div>
+      <div class="circle2"></div>
+      <div class="container">
+        <!-- Image -->
+        <div><img src="./assets/hero.jpg" alt="Hero " /></div>
+
+        <!-- Heading -->
+        <div class="userName">
+          <h2>Priyansh Patel</h2>
+        </div>
+
+        <!-- designation  -->
+        <div class="designation">
+          <h3>Software Engineer</h3>
+        </div>
+
+        <!-- Button Group  -->
+        <div class="btnGroup">
+          <button class="btn btnShare" onclick="openModal()">
+            <i class="fa-solid fa-share"></i>
+            <div>Share My Profile</div>
+          </button>
+
+          <button class="btn btnFollow">
+            <a href="https://www.linkedin.com/in/-priyanshpatel/">Follow Me</a>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Component  -->
+    <div class="modal">
+      <div class="modalHeader">
+        <h1>Share My Profile</h1>
+        <div>
+          <i onclick="closeModal()" class="fa-solid fa-xmark close"></i>
+        </div>
+      </div>
+
+      <div>
+        <h3>Share this via</h3>
+        <div class="iconContainer">
+          <a
+            href="https://www.facebook.com/priyansh.patel.94651"
+            class="icon"
+            id="facebook"
+          >
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://twitter.com/priyansh79" class="icon" id="twitter">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/_p_r_i_y_a_n_s_h/"
+            class="icon"
+            id="instagram"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://web.whatsapp.com/" class="icon" id="whatsapp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <a href="https://web.telegram.org/z/" class="icon" id="telegram">
+            <i class="fa-brands fa-telegram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Overlay  -->
+    <div class="overlay" onclick="closeModal()"></div>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/58a810656e.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
