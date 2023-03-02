@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Password Generator</title>
+    <script src="./script.js" defer></script>
   </head>
   <body>
     <!-- Wrapper -->
@@ -16,11 +17,50 @@
 
       <!-- Display Container  -->
       <div class="displayContainer">
-        <input type="text" placeholder="Password Length" readonly />
-        <button>
-            <span></span>
-            <img src="" alt="">
+        <input type="text" placeholder="Password" readonly passwordDisplay/>
+        <button class="copyBtn">
+          <span copyMessage></span>
+          <img src="./images/copy.svg" alt="copy" width="24" height="24" />
         </button>
+      </div>
+
+      <!-- Input Container  -->
+      <div class="inputContainer">
+        <div>
+          <p>Password Length</p>
+          <p lengthDisplay></p>
+        </div>
+
+        <input type="range" min="1" max="20" step="1" />
+
+        <!-- Checkboxes  -->
+        <div>
+          <div class="check">
+            <input type="checkbox" name="" id="uppercase" />
+            <label for="uppercase">include uppercase letters</label>
+          </div>
+          <div class="check">
+            <input type="checkbox" name="" id="lowercase" />
+            <label for="lowercase">include lowercase letters</label>
+          </div>
+          <div class="check">
+            <input type="checkbox" name="" id="numbers" />
+            <label for="numbers">include numbers</label>
+          </div>
+          <div class="check">
+            <input type="checkbox" name="" id="symbols" />
+            <label for="symbols">include symbols</label>
+          </div>
+        </div>
+
+        <!-- Strength Container -->
+        <div class="strengthContainer">
+          <p>Strength</p>
+          <div class="indicator"></div>
+        </div>
+
+        <!-- Button  -->
+        <button id="generateBtn">Generate password</button>
       </div>
     </div>
   </body>
