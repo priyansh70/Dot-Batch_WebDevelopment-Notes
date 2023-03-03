@@ -62,7 +62,7 @@ let indicator = document.querySelector('.indicator');
 // Set Indicator 
 function setIndicator(color) {
     indicator.style.backgroundColor = color;
-    indicator.style.boxShadow = `0 0 12px 12px ${color}`;
+    indicator.style.boxShadow = `0 0 12px 1px ${color}`;
 }
 
 // Default Indicator 
