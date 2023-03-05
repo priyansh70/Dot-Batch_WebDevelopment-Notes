@@ -1,97 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather App</title>
-    <script src="./script.js"></script>
-    <link rel="stylesheet" href="./style.css" />
-    <script src="./index.js" defer></script>
-  </head>
-  <body>
-    <!-- Wrapper      -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
     <div class="wrapper">
-      <h1>Weather App</h1>
 
-      <div class="tabContainer">
-        <p class="tab" data-userWeather>Your Weather</p>
-        <p class="tab" data-searchWeather>Search Weather</p>
-      </div>
+        <h1>Weather App</h1>
 
-      <!-- Weather Container  -->
-      <div class="weather-container">
-        <!-- Grant Location -->
-        <div class="grantLocationContainer">
-          <img
-            src="./images/location.png"
-            width="80"
-            height="80"
-            loading="lazy"
-          />
-          <p>grant location access</p>
-          <p>Allow Access to get weather information</p>
-          <button class="btn" data-grantAccess>Grant Access</button>
+        <div class="tab-container">
+            <p class="tab" data-userWeather>Your Weather</p>
+            <p class="tab" data-searchWeather>Search Weather</p>
         </div>
 
-        <!-- Search Form  -->
-        <div class="formContainer" data-searchForm>
-          <input placeholder="Search For City....." data-searchInput />
-          <button class="btn">
-            <img
-              src="./images/search.png"
-              width="20"
-              height="20"
-              loading="lazy"
-            />
-          </button>
-        </div>
+        <div class="weather-container">
 
-        <!-- Loading Screen Container -->
-        <div class="loadingContainer">
-          <img src="./images/loading.gif" width="150" height="150" />
-          <p>Loading</p>
-        </div>
-
-        <!-- Show Weather Info  -->
-        <div class="userInfocontainer">
-          <!-- City Name and Flag  -->
-          <div class="name">
-            <p data-cityName>Name</p>
-            <img data-countryIcon />
-          </div>
-
-          <p data-weatherDesc></p>
-
-          <img data-weatherIcon />
-
-          <p data-temp></p>
-
-          <!-- Card - parameters -->
-          <div class="parameterContainer">
-            <!-- Card1 -->
-            <div class="parameter">
-              <img src="./images/wind.png" alt="" />
-              <p>windspeed</p>
-              <p data-windspeed></p>
+            <!-- grant location container-->
+            <div class="sub-container grant-location-container">
+                <img src="./images/location.png" width="80" height="80" loading="lazy">
+                <p>Grant Location Access</p>
+                <p>Allow Access to get weather Information</p>
+                <button class="btn" data-grantAccess>Grant Access</button>
             </div>
 
-            <!-- Card2 -->
-            <div class="parameter">
-              <img src="./images/humidity.png" alt="" />
-              <p>humidity</p>
-              <p data-humidity></p>
+            <!-- search form -> form-container-->
+            <form class="form-container" data-searchForm>
+                <input placeholder="Search for City..." data-searchInput>
+                <button class="btn" type="submit">
+                    <img src="./images/search.png"  width="20" height="20" loading="lazy">
+                </button>
+            </form>
+
+            <!--- loading screen container -->
+            <div class="sub-container loading-container">
+                <img src="./images/loading.gif" width="150" height="150">
+                <p>Loading</p>
             </div>
 
-            <!-- Card3 -->
-            <div class="parameter">
-              <img src="./images/cloud.png" alt="" />
-              <p>cloud</p>
-              <p data-cloud></p>
+            <!-- show weather info -->
+            <div class="sub-container user-info-container">
+
+                <!--city name and Flag-->
+                <div class="name">
+                    <p data-cityName></p>
+                    <img data-countryIcon>
+                </div>
+
+                <!-- weather descriptuion-->
+                <p data-weatherDesc></p>
+                <!--weather Icon-->
+                <img data-weatherIcon>
+                <!--temperature-->
+                <p data-temp></p>
+
+                <!--3 cards - parameters-->
+                <div class="parameter-container">
+
+                    <!--card 1-->
+                    <div class="parameter">
+                        <img src="./images/wind.png" >
+                        <p>windspeed</p>
+                        <p data-windspeed></p>
+                    </div>
+
+                    <!--card 2-->
+                    <div class="parameter">
+                        <img src="./images/humidity.png" >
+                        <p>humidity</p>
+                        <p data-humidity></p>
+                    </div>
+
+                    <!--card 3-->
+                    <div class="parameter">
+                        <img src="./images/cloud.png" >
+                        <p>Clouds</p>
+                        <p data-cloudiness></p>
+                    </div>
+
+                </div>
+
+
             </div>
-          </div>
+
+
+
         </div>
-      </div>
+
+
     </div>
-  </body>
+
+
+    <script src="index.js"></script>
+</body>
 </html>
