@@ -35,7 +35,7 @@
     <link rel="stylesheet" href="./style.css" />
 
     <!-- JS -->
-    <script src="./script.js"></script>
+    <script src="./script.js" defer></script>
   </head>
   <body>
     <div class="wrapper">
@@ -63,6 +63,8 @@
               type="text"
               id="input"
               placeholder="Enter a Github username..."
+              required
+              autofocus
             />
             <div class="error">
               <p id="no-results">no search results</p>
@@ -94,15 +96,15 @@
               <div class="statsContainer">
                 <div class="profileStats">
                   <p class="statsTitle">Repos</p>
-                  <p id="repos"></p>
+                  <a id="repos"></a>
                 </div>
                 <div class="profileStats">
                   <p class="statsTitle">Followers</p>
-                  <p id="followers"></p>
+                  <a id="followers"></a>
                 </div>
                 <div class="profileStats">
                   <p class="statsTitle">Following</p>
-                  <p id="following"></p>
+                  <a id="following"></a>
                 </div>
               </div>
 
