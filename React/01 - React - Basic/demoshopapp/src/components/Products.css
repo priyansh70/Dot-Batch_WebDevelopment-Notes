@@ -1,0 +1,7 @@
+.products {
+  padding: 1rem;
+  background-color: yellow;
+  margin: 2rem auto;
+  width: 25rem;
+  max-width: 95%;
+}

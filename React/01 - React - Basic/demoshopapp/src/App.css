@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+.App{
+  width:100vw;
+  height:100vh;
+  background-color:grey;
+  color:black;
+  
+}
