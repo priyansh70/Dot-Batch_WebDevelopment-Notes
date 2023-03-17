@@ -12,32 +12,33 @@ btn.addEventListener('click', () => {
     }
 })
 
+input.addEventListener('keydown', (e) => {
+    // console.log(e.key);
+    if (e.key === 'Enter') {
+        if (input.value !== "") {
+            getUserData(url + input.value);
+        }
+    }
+}, false);
+
 async function getUserData(gitUrl) {
     const response = await fetch(gitUrl);
     const data = await response.json();
-    // if(!data)
-    // {
-    //     throw data;
-    // }
+    if (!data) {
+        throw data;
+    }
     updateProfile(data);
     // return data;
 }
 
 let dateSegment;
+const noResults = get("noResults");
 
 function updateProfile(data) {
+    noResults.style.scale = 0;
     if (data.message !== "Not Found") {
-        // function checkNull(param1, param2) {
-        //     if (param1 === "" || param1 === null) {
-        //         param2.style.opacity = 0.5;
-        //         param2.previousElementSibling.style.opacity = 0.5;
-        //         return false;
-        //     } else {
-        //         return true;
-        //     }
-        // }
         function checkNull(apiItem, domItem) {
-            if (apiItem === null || apiItem === "") {
+            if (apiItem === "" || apiItem === null) {
                 domItem.style.opacity = 0.5;
                 domItem.previousElementSibling.style.opacity = 0.5;
                 return false;
@@ -90,5 +91,82 @@ function updateProfile(data) {
 
         company.innerText = checkNull(data?.company, company) ? data?.company : "Not Available";
     }
+    else {
+        noResults.style.scale = 1;
+        setTimeout(() => {
+            noResults.style.scale = 0;
+        }, 2500);
+    }
 }
-getUserData(url + "priyansh70")
+
+
+// Dark And Light Mode 
+const modeBtn = get("modeBtn");
+const modeText = get("modeText");
+const modeIcon = get("modeIcon");
+let darkMode = false;
+const root = document.documentElement.style;
+
+modeBtn.addEventListener("click", () => {
+
+    if (darkMode === false) {
+        enableDarkMode();
+    }
+    else {
+        enableLightMode();
+    }
+});
+
+function enableDarkMode() {
+    root.setProperty("--lm-bg", "#141D2F");
+    root.setProperty("--lm-bg-content", "#1E2A47");
+    root.setProperty("--lm-text", "white");
+    root.setProperty("--lm-text-alt", "white");
+    root.setProperty("--lm-shadow-xl", "rgba(70,88,109,0.15)");
+    modeText.innerText = "LIGHT";
+    modeIcon.src = "./Images/sun-icon.svg";
+    root.setProperty("--lm-icon-bg", "brightness(1000%)");
+    darkMode = true;
+    localStorage.setItem("dark-mode", true);
+
+}
+
+function enableLightMode() {
+    root.setProperty("--lm-bg", "#F6F8FF");
+    root.setProperty("--lm-bg-content", "#FEFEFE");
+    root.setProperty("--lm-text", "#4B6A9B");
+    root.setProperty("--lm-text-alt", "#2B3442");
+    root.setProperty("--lm-shadow-xl", "rgba(70, 88, 109, 0.25)");
+    modeText.innerText = "DARK";
+    modeIcon.src = "./Images/moon-icon.svg";
+    root.setProperty("--lm-icon-bg", "brightness(100%)");
+    darkMode = false;
+    localStorage.setItem("dark-mode", false);
+}
+
+
+// This code checks if the user's device has a preference for dark mode
+const prefersDarkMode = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+// Check if there is a value for "dark-mode" in the user's localStorage
+if (localStorage.getItem("dark-mode") === null) {
+    // If there is no value for "dark-mode" in localStorage, check the device preference
+    if (prefersDarkMode) {
+        // If the device preference is for dark mode, apply dark mode properties
+        enableDarkMode();
+    } else {
+        // If the device preference is not for dark mode, apply light mode properties
+        enableLightMode();
+    }
+} else {
+    // If there is a value for "dark-mode" in localStorage, use that value instead of device preference
+    if (localStorage.getItem("dark-mode") === "true") {
+        // If the value is "true", apply dark mode properties
+        enableDarkMode();
+    } else {
+        // If the value is not "true", apply light mode properties
+        enableLightMode();
+    }
+}
+
+getUserData(url + "priyansh70");

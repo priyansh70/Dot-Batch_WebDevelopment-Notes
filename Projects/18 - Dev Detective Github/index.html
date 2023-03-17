@@ -43,7 +43,7 @@
         <!-- Header  -->
         <header class="header">
           <h1 class="title">DevDetective</h1>
-          <div class="btn">
+          <div class="btn" id="modeBtn">
             <p id="modeText">dark</p>
             <div class="iconContainer">
               <img
@@ -66,10 +66,13 @@
               required
               autofocus
             />
+            
             <div class="error">
-              <p id="no-results">no search results</p>
+              <p id="noResults">no search results</p>
             </div>
-            <button id="btn">Search</button>
+
+            <button id="btn">Search
+            </button>
           </div>
 
           <!-- Profile Container -->
@@ -77,7 +80,7 @@
             <div class="profileContent">
               <div class="profileHeader">
                 <img id="userImage" loading="lazy" />
-                <div class="profileInfo">
+                <div class="profileInfoWrapper">
                   <div class="profileName">
                     <h2 id="name"></h2>
                     <a

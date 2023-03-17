@@ -99,14 +99,26 @@ main {
   font-size: 13px;
 }
 
-/* .searchContainer img {
+.searchContainer img {
   height: 20px;
   width: 20px;
   padding: 0 10px 0px 16px;
-} */
+}
 
-.searchContainer .error {
-  display: none;
+#noResults{
+  position: absolute;
+  text-transform: capitalize;;
+  top: -30px;
+  right: -40px;
+  background-color: red;
+  border-radius: 10px;
+  width: 180px;
+  padding: 4px 6px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  scale: 0;
+  transition: 0.5s;
 }
 
 .searchContainer #btn {
@@ -121,7 +133,9 @@ main {
   min-width: 84px;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
+  position: relative;
 }
+
 
 .searchContainer #btn:hover {
   background-color: var(--btn-hover);
@@ -160,7 +174,7 @@ main {
   /* margin-left: 40px; */
 }
 
-.profileInfo {
+.profileInfoWrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
