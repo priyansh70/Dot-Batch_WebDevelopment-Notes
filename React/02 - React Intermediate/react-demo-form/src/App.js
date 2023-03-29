@@ -14,7 +14,7 @@ function App() {
     comments: false,
     candidate: false,
     offers: false,
-    pushNotification:
+    pushNotification:""
   });
 
   function changeHandler(event) {
