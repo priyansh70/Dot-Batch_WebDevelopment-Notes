@@ -34,6 +34,7 @@ const App = () => {
   function submitHandler(event) {
     event.preventDefault();
     alert("Saved Successfull - Your Data \n" + formData)
+    console.log(formData);
     setFormData({
       firstName: "",
       lastName: "",
@@ -229,7 +230,7 @@ const App = () => {
                 checked={formData.offers}
                 onChange={changeHandler}
                 className="h-4 w-4 mt-1 rounded"
-                
+
               />
               <div className="flex flex-col ml-3">
                 <label
@@ -285,7 +286,7 @@ const App = () => {
                 type="radio"
                 name="pushNotifications"
                 id="pushNothing"
-                value= "No push notification"
+                value="No push notification"
                 onChange={changeHandler}
               />
               <label
