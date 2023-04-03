@@ -1,19 +1,23 @@
 import React from "react";
 import Logo from "../assets/Logo.svg";
 import { Link } from "react-router-dom";
+import toast from 'react-hot-toast';
 
-const Navbar = () => {
+const Navbar = (props) => {
+  const isLoggedIn = props.isLoggedIn;
+  const setIsLoggedIn = props.setIsLoggedIn;
+
   return (
-    <div>
+    <div className="w-11/12 max-w-[1160px] mx-auto flex flex-row justify-between items-center py-4">
       {/* Logo */}
       <div>
         <Link>
-          <img src={Logo} alt="Logo" />
+          <img src={Logo} alt="Logo" height={32} width={160} loading="lazy" />
         </Link>
       </div>
 
       <nav>
-        <ul>
+        <ul className="flex gap-x-6 text-richblack-100">
           <li>
             <Link to="/">Home</Link>
           </li>
@@ -27,22 +31,32 @@ const Navbar = () => {
       </nav>
 
       {/* Button Group  */}
-      <div>
-        <Link to="/login">
+      <div className="flex items-center gap-x-4 text-richblack-100">
+        {!isLoggedIn && (
+          <Link to="/login">
             <button>Log in</button>
-        </Link>
+          </Link>
+        )}
 
-        <Link to="/signup">
+        {!isLoggedIn && (
+          <Link to="/signup">
             <button>Sign up</button>
-        </Link>
+          </Link>
+        )}
 
-        <Link to="/logout">
-            <button>Log out</button>
-        </Link>
-
-        <Link to="/dashboard">
+        {isLoggedIn && (
+          <Link to="/">
+            <button onClick={() => {
+              setIsLoggedIn(false)
+              toast.success("Logged out");
+            }}>Log out</button>
+          </Link>
+        )}
+        {isLoggedIn && (
+          <Link to="/dashboard">
             <button>Dashboard</button>
-        </Link>
+          </Link>
+        )}
       </div>
     </div>
   );
