@@ -11,10 +11,14 @@ const useGif = (tag) => {
   async function fetchData(tag) {
     setLoading(true);
 
-    const { data } = await axios.get(tag ? `${url}&tag=${url}` : url);
+    const { data } = await axios.get(tag  ? `${url}&tag=${tag}` : url);  
     const imageSource = data?.data?.images?.downsized_large?.url;
     setGif(imageSource);
     console.log(imageSource);
+    // const res = await fetch(tag ? `${url}&tag=${tag}` : url)
+    // const output = await res.json();
+    // const imageSource = output.data.images.downsized.url;
+    // setGif(imageSource)
     setLoading(false);
   }
 
@@ -22,7 +26,7 @@ const useGif = (tag) => {
     fetchData("car");
   }, []);
 
-  return gif, loading, fetchData;
+  return (gif, loading, fetchData);
 };
 
 export default useGif;
