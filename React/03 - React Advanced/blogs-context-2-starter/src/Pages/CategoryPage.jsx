@@ -7,7 +7,6 @@ const CategoryPage = () => {
     const location = useLocation();
     const navigation = useNavigate();
     const category = location.pathname.split('/').at(-1);
-
     return (
         <div>
             <Header />
