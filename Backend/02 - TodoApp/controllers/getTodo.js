@@ -3,7 +3,7 @@ const Todo = require("../models/Todo");
 
 //define route handler
 
-exports.createTodo = async (req, res) => {
+exports.getTodos = async (req, res) => {
   try {
     // fetch all todo items from database
     const todos = await Todo.find({});
