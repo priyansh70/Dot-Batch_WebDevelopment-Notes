@@ -599,3 +599,126 @@ a{
 .skill-subHeading p{
   margin:15px 0;
 }
+
+
+/* Contact Me Section Start  */
+.contactMeSection {
+  width: 100%;
+  background-color: #e7e7e7;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container h2 {
+  font-size: 5em;
+  padding-top: 2rem;
+  color: #e84949;
+}
+
+.container h3 {
+  font-size: 3em;
+  color: #343d68aa;
+}
+
+.contactUsForm {
+  display: flex;
+  margin-top: 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactUsForm form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+/* 
+.formFieldContainer{
+  width: 100%;
+} */
+
+.formField {
+  width: 100%;
+  height: 42px;
+  padding: 0 2rem;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px #1f1f1f;
+  background: #ffffff97;
+  font-weight: 500;
+}
+
+.formfield:focus {
+  border: none;
+}
+
+.formFieldContainer textarea {
+  height: auto;
+  padding-top: 1rem;
+}
+
+.formBtn .btn {
+  transition: 0.5s;
+  border: none;
+  font-size: 1.4rem;
+  margin: 1rem 0;
+}
+
+.formBtn .btn:hover {
+  transform: scale(0.9);
+}
+
+.formBtn .btn i {
+  padding: 0 1rem;
+  font-size: 1.5rem;
+}
+
+/* Contact Me Section Ends  */
+
+/* Footer Section Start  */
+footer {
+  background: #343d68;
+  position: relative;
+  padding: 5rem;
+}
+
+.footerFadedText {
+  font-size: 5em;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: #535c87;
+  user-select: none;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.2rem;
+}
+
+.linkContainer {
+  display: flex;
+  gap: 1.2em;
+}
+
+.linkContainer div a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.6s;
+}
+
+.linkContainer div a:hover{
+  color: #e84949;
+}
+
+.iconContainer{
+  display: flex;
+  gap: 1rem;
+}
