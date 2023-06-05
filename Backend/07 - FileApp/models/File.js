@@ -5,15 +5,12 @@ const fileSchema = new mongoose.Schema({
         type:String,
         required:true,
     },
-    imageUrl:{
+    fileUrl:{
         type:String,
     },
     tags:{
         type:String,
     },
-    email:{
-        type:String,
-    }
 });
 
 const File = mongoose.model("File", fileSchema);

@@ -1,1 +1,7 @@
 .env file not able to upload because of security issues
+.env file structure - 
+MONGODB_URL = "MONGODB_URL"
+PORT = 4000
+CLOUD_NAME = "YOUR Cloud name"
+API_KEY = "Your API KEY"
+API_SECRET = "Your API Secrey"
