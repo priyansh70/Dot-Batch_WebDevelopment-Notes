@@ -50,8 +50,8 @@ async function uploadFileToCloudinary(file, folder, quality) {
 exports.imageUpload = async (req, res) => {
     try {
 
-        const { name, tags } = req.body;
-        console.log(name, tags);
+        const { name, tags, email } = req.body;
+        console.log(name, tags, email);
 
         // Fetch file 
         const imageFile = req.files.imageFile;
@@ -77,6 +77,7 @@ exports.imageUpload = async (req, res) => {
         const fileData = await File.create({
             name,
             tags,
+            email,
             fileUrl: response.secure_url
         })
 
@@ -101,9 +102,10 @@ exports.imageUpload = async (req, res) => {
 exports.videoUpload = async (req, res) => {
     try {
         // Fetch Data 
-        const { name, tags } = req.body;
+        const { name, tags, email } = req.body;
+        console.log(name, tags, email);
+
         const videoFile = req.files.videoFile;
-        console.log(name, tags, videoFile)
 
         // Validation 
         const supportedTypes = ["mp4", "mov"];
@@ -125,6 +127,7 @@ exports.videoUpload = async (req, res) => {
         const vidFile = new File({
             name,
             tags,
+            email,
             fileUrl: response.secure_url
         })
 
@@ -149,8 +152,8 @@ exports.videoUpload = async (req, res) => {
 exports.imageReducer = async (req, res) => {
     try {
 
-        const { name, tags } = req.body;
-        console.log(name, tags);
+        const { name, tags, email } = req.body;
+        console.log(name, tags, email);
 
         // Fetch file 
         const imageFile = req.files.imageFile;
@@ -177,6 +180,7 @@ exports.imageReducer = async (req, res) => {
         const fileData = await File.create({
             name,
             tags,
+            email,
             fileUrl: response.secure_url
         })
 
