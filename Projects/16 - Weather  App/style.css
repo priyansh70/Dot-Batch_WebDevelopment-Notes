@@ -17,7 +17,7 @@
 .wrapper {
     height: 100vh;
     width: 100vw;
-    overflow: hidden;
+    overflow-x: hidden;
     color: var(--colorLight2);
     background-color: #112d4e;
     background-image: linear-gradient(160deg, #112d4e 0%, #3f72af 100%);
@@ -144,12 +144,6 @@ h1 {
 
 .grantLocationContainer img {
     margin-bottom: 1.5rem;
-}
-
-.grantLocationContainer p:first-of-type {
-    font-weight: 600;
-    font-size: 1.75rem;
-    text-align: center;
 }
 
 .grantLocationContainer p:first-of-type {
