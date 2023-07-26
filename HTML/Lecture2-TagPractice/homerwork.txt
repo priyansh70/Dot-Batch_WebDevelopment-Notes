@@ -2,7 +2,7 @@ Question1 - Why there is only h1 to h6 not h7,h8......?
 Answer : The HTML specification defines six headings. Browsers recognize six headings. 
 If you start using <h7> and so on, then you'll be using an invalid element.
 If you find yourself needing an <h7> then you should probably take a look at how 
-you're structuring your site. Not every single title deserves a heading elemen
+you're structuring your site. Not every single title deserves a heading element.
 
 ----------------------xxx--------------------
 
